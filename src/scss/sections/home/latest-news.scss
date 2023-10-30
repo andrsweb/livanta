@@ -1,0 +1,37 @@
+.latest-news {
+	padding: 30px 0 62px;
+
+	@media all and (min-width: $lg) {
+		padding: 60px 0 120px;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__arrows {
+		display: flex;
+		align-items: center;
+	}
+
+	.button__wrapper {
+		margin-top: 28px;
+		display: flex;
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-end;
+			margin-top: 48px;
+		}
+	}
+}

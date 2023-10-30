@@ -1,0 +1,173 @@
+.certifications {
+	padding: 30px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 44px 0 60px;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+	.h2__wrapper {
+		margin-bottom: 14px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 34px;
+		}
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		margin-right: 45px;
+	}
+
+	&__right {
+		padding-top: 20px;
+
+		.slider-info__text {
+			color: $grey;
+			font-family: $ff;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: $lh;
+
+			@media all and (min-width: $md) {
+				font-size: 14px;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			padding-top: 147px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		margin-top: 48px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	.slider-info__title {
+		color: $grey;
+		font-family: $ff;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: 160%;
+		margin-bottom: 12px;
+
+		@media all and (min-width: $md) {
+			font-size: 24px;
+		}
+	}
+
+	.slider-thumbs {
+		width: 100vw;
+		padding-right: 40px;
+
+		@media all and (min-width: $lg) {
+			width: 460px;
+			padding-right: 0;
+		}
+
+		.swiper-slide {
+			width: 150px;
+			height: 150px;
+			filter: grayscale(100%);
+			border: 1px solid #DBDBDB;
+			transition: border-color ease $tr,
+				filter ease $tr;
+
+				@media all and (min-width: $xl) {
+					width: 220px;
+					height: 220px;
+				}
+
+			.slider__image {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+
+		.swiper-slide-thumb-active{
+			filter: grayscale(0);
+			border-color: $blue;
+		}
+
+		.swiper-wrapper {
+			width: 830px;
+
+			@media all and (min-width: $lg) {
+				width: 320px;
+				height: 700px;
+				flex-direction: column;
+			}
+
+			@media all and (min-width: $xl) {
+				width: 460px;
+			}
+		}
+	}
+
+	@media all and (min-width: $lg) {
+		.slide1 {
+			position: absolute;
+			right: 0;
+			top: 120px;
+		}
+	
+		.slide2 {
+			position: absolute;
+			right: 0;
+			top: 360px;
+		}
+	}
+
+	@media all and (min-width: $xl) {
+		.slide1 {
+			position: absolute;
+			right: 0;
+			top: 120px;
+		}
+	
+		.slide2 {
+			position: absolute;
+			right: 0;
+			top: 360px;
+		}
+	}
+
+	.slider-info {
+		@media all and (min-width: $lg) {
+			width: 400px;
+		}
+
+		@media all and (min-width: $xl) {
+			width: 692px;
+		}
+	}
+
+	.slider-tumbs {
+		width: 460px;
+	}
+}

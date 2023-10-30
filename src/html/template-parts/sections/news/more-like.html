@@ -1,0 +1,30 @@
+<section class="more-like">
+	<div class="container">
+		<div class="more-like__title">
+			<h3 class="h3">More like this</h3>
+			<div class="more-like__arrows">
+				<div class="swiper-button more-like_prev">
+					<img src="img/icons/arrow.svg" width="24" height="16" loading="lazy" alt="">
+				</div>
+				<div class="swiper-button more-like_next">
+					<img class="arr-reverse" src="img/icons/arrow.svg" width="24" height="16" loading="lazy" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="more-like__cards">
+			<div class="swiper more-like-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						@@include('../../components/card.html',{'src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+					</div>
+					<div class="swiper-slide">
+						@@include('../../components/card.html',{'src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+					</div>
+					<div class="swiper-slide">
+						@@include('../../components/card.html',{'src': 'img/home/news/latest-3.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,48 @@
+<section class="latest-news">
+	<div class="container">
+		<div class="latest-news__wrapper">
+			<div class="latest-news__heading">
+				<h2 class="h2">
+					Latest news
+				</h2>
+				<div class="latest-news__arrows">
+					<div class="swiper-button latest__news_prev">
+						<img src="img/icons/arrow.svg" width="24" height="16" loading="lazy" alt="">
+					</div>
+					<div class="swiper-button latest__news_next">
+						<img class="arr-reverse" src="img/icons/arrow.svg" width="24" height="16" loading="lazy" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="latest-news__items">
+				<div class="swiper latest-news-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							@@include('../../components/card.html',{'src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+						</div>
+						<div class="swiper-slide">
+							@@include('../../components/card.html',{'src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'PERM Pearls: What CMS\' Payment Error Rate Measurement Data Offers', 'href': 'news-link.html'},)
+						</div>
+						<div class="swiper-slide">
+							@@include('../../components/card.html',{'src': 'img/home/news/latest-3.png', 'type': 'Innovation stories', 'date': '01 May, 2023', 'text': 'Livanta Integrates with Medicare\'s Beneficiary Information on the Cloud (BIC) Database', 'href': 'news-link.html'})
+						</div>
+						<div class="swiper-slide">
+							@@include('../../components/card.html',{'src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+						</div>
+						<div class="swiper-slide">
+							@@include('../../components/card.html',{'src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+						</div>
+						<div class="swiper-slide">
+							@@include('../../components/card.html',{'src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+						</div>
+					</div>
+				</div>
+				<div class="button__wrapper">
+					<button class="button view-all" onclick="window.location='news.html'">
+						view all news
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

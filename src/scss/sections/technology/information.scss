@@ -1,0 +1,36 @@
+.information {
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 120px 0 0;
+	}
+
+	.h2 {
+		max-width: 539px;
+		margin-bottom: 60px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.quality__img {
+		height: 230px;
+
+		@media all and (min-width: $xm) {
+			height: 300px
+		}
+
+		@media all and (min-width: $lg) {
+			height: 180px;
+		}
+	}
+
+	.services-template {
+		padding-top: 30px;
+
+		@media all and (min-width: $lg) {
+			padding-top: 0;
+		}
+	}
+}

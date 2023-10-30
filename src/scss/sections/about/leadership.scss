@@ -1,0 +1,152 @@
+.leadership {
+	padding: 35px 0 60px;
+	position: relative;
+
+	.container {
+		max-width: $xl;
+	}
+
+	.h2__wrapper {
+		max-width: 454px;
+		margin-bottom: 14px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 18px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: 35px;
+		right: 20px;
+
+		@media all and (min-width: $lg) {
+			position: static;
+			bottom: auto;
+			right: auto;
+		}
+	}
+
+	.section__text {
+		max-width: 846px;
+	}
+
+	.swiper {
+		overflow: visible;
+		position: relative;
+
+		@media all and (min-width: $lg) {
+			&::before {
+				content: '';
+				position: absolute;
+				left: -500px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: block;
+				width: 500px;
+				height: 120%;
+				z-index: 100;
+				background-color: #FBFBFB;
+			}
+		}
+	}
+
+	.swiper-slide {
+		width: 500px;
+		padding: 16px;
+		box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.04);
+
+		@media all and (min-width: $lg) {
+			padding: 24px 33px 27px 24px;
+		}
+	}
+
+	&__swiper_img {
+		width: 106px;
+		height: 106px;
+
+		@media all and (min-width: $lg) {
+			width: 157px;
+			height: 157px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__name, &__job {
+		color: $gentle-black;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: $lh;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
+	}
+
+	&__job {
+		color: $grey;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $red;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: $lh;
+		text-transform: uppercase;
+
+		img {
+			margin-left: 8px;
+		}
+
+		&_wrapper {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 37px;
+
+			@media all and (min-width: $md) {
+				margin-top: 67px;
+			}
+		}
+	}
+
+	&__swiper_wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.swiper-scrollbar.swiper-scrollbar-horizontal {
+		margin-top: 22px;
+		position: relative;
+		width: 120px;
+		height: 2px;
+
+		@media all and (min-width: $md) {
+			width: 200px;
+			margin-top: 36px;
+		}
+	}
+}
+

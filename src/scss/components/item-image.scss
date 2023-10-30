@@ -1,0 +1,24 @@
+.item__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #FCF4F5;
+
+	img {
+		width: 16px;
+		height: 16px;
+	}
+
+	@media all and (min-width: $md) {
+		width: 44px;
+		height: 44px;
+
+		img {
+			width: 22px;
+			height: 22px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.offer {
+	padding: 55px 0 61px;
+
+	@media all and (min-width: $lg) {
+		padding: 150px 0 120px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__title {
+		color: $blue;
+		text-align: center;
+		font-family: $ff-title;
+		font-size: 44px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: $lh-h1;
+		max-width: 699px;
+
+		@media all and (min-width: $md) {
+			font-size: 70px;
+		}
+	}
+}

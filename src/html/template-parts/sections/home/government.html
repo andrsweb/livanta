@@ -1,0 +1,36 @@
+<section class="government">
+	<div class="container">
+		<div class="government__wrapper">
+			<div class="government__img desktop">
+				<img src="img/home/government/government-img.png" width="500" height="500" loading="lazy" alt="">
+			</div>
+			<div class="government__info">
+				@@include('../../components/h2.html', {'subtitle': 'government', 'title':'Public Policy Services'})
+				<div class="government__info_texts">
+					<p class="section__text government__info_text">
+						We provide governmental agencies with public policy insights through actuarial and econometric analysis.
+					</p>
+					<p class="section__text government__info_text">
+						Livanta provides expert data management, statistical analysis, and econometric modeling for policy evaluation. With deep industry expertise, Livanta helps governmental agencies monitor current trends in healthcare improvement and recognize impacts of policy decisions.
+					</p>
+					<div class="government__img mobile">
+						<img src="img/home/government/government-img.png" width="552" height="624" loading="lazy" alt="">
+					</div>
+				</div>
+				<div class="government__list">
+					<div class="government__items">
+						@@loop('./payer-item.html', [
+							{'src': 'img/icons/government/data.svg', 'text': 'Providing key insights on program changes, Livanta\’s analytics team has extensive backgrounds in econometrics, statistics, and use of claims and medical records data.'},
+							{'src': 'img/icons/government/stats.svg', 'text': 'With expertise in advanced statistical techniques, Livanta\’s analytics team identifies the effectiveness, efficiency, and equity of national and state health care systems to assist government agencies in achieving their goals.'},
+						])
+					</div>
+				</div>
+				<div class="button__wrapper">
+					<button class="button" onclick="window.location='contacts.html'">
+						contact us
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

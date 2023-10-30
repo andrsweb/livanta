@@ -1,0 +1,37 @@
+.dropdown-heading {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 58px;
+
+	@media all and (min-width: $xl) {
+		flex-direction: row;
+		padding-top: 130px;
+	}
+
+	.h2 {
+		max-width: 539px;
+		color: $gentle-black;
+		font-family: $ff-title;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 120%;
+
+		@media all and (min-width: $xl) {
+			font-size: 56px;
+		}
+	}
+
+	img {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 14px;
+
+		@media all and (min-width: $xl) {
+			width: 120px;
+			height: 120px;
+			margin-right: 7px;
+			margin-bottom: 0;
+		}
+	}
+}

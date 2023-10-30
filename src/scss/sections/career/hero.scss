@@ -1,0 +1,110 @@
+.career {
+	position: relative;
+	padding-bottom: 54px;
+
+	@media all and (min-width: $lg) {
+		padding-bottom: 130px;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+	.h1 {
+		margin-bottom: 50px;
+	}
+
+	&__img {
+		width: 100vw;
+		height: 245px;
+		margin-left: calc(50% - 50vw);
+
+		@media all and (min-width: $xm) {
+			height: 325px;
+		}
+
+		@media all and (min-width: $lg) {
+			height: 365px;
+		}
+
+		img {
+			width: 100%;
+			height: 660px;
+			object-fit: cover;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			align-items: flex-end;
+		}
+	}
+
+	.section__text {
+		max-width: 614px;
+		margin-bottom: 36px;
+	}
+
+	&__join {
+		width: 100%;
+		max-width: 686px;
+		background-color: $white;
+
+		&_title {
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			line-height: $lh;
+			margin-bottom: 12px;
+
+			@media all and (min-width: $md) {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&_info {
+			margin-top: 20px;
+
+			@media all and (min-width: $md) {
+				margin-top: 0;
+				margin-left: 48px;
+				margin-bottom: 120px;
+			}
+		}
+
+		&_subtitle {
+			color: $grey;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: $lh;
+			margin-bottom: 20px;
+
+			@media all and (min-width: $md) {
+				font-size: 18px;
+			}
+		}
+
+		&_text {
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			line-height: $lh;
+
+			@media all and (min-width: $md) {
+				font-size: 18px;
+			}
+		}
+	}
+}

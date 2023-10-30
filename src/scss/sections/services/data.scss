@@ -1,0 +1,17 @@
+.data {
+	padding-bottom: 30px;
+
+	@media all and (min-width: $lg) {
+		padding-bottom: 60px;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+}
+
+.dropdown-heading {
+	@media all and (min-width: $lg) {
+		align-items: center;
+	}
+}

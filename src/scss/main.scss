@@ -1,0 +1,81 @@
+// Libs
+@import '../../node_modules/swiper/swiper-bundle.min';
+
+// Defaults styles.
+@import 'common/fonts';
+@import 'common/vars';
+@import 'common/typography';
+@import 'common/grid';
+@import 'common/base';
+@import 'common/buttons';
+
+// Components
+@import './components/video';
+@import './components/scroll-down';
+@import './components/item-image';
+@import './components/h2-wrapper';
+@import './components/wrappers';
+@import './components/swiper';
+@import './components/card';
+@import './components/dropdown';
+@import './components/about-dropdowns';
+@import './components/dropdown-heading';
+@import './components/breadcrumbs';
+
+// Header styles.
+@import 'header/header';
+
+// Footer styles.
+@import 'footer/footer';
+@import 'footer/popup';
+
+// Home page sections styles.
+@import 'sections/home/hero';
+@import 'sections/home/offer';
+@import 'sections/home/beneficiary';
+@import 'sections/home/provider';
+@import 'sections/home/payer';
+@import 'sections/home/government';
+@import 'sections/home/about-us';
+@import 'sections/home/latest-news';
+@import 'sections/home/talk';
+
+// About page sections styles.
+@import 'sections/about/hero';
+@import 'sections/about/serves';
+@import 'sections/about/do-it';
+@import 'sections/about/choose';
+@import 'sections/about/leadership';
+@import 'sections/about/staff';
+@import 'sections/about/work';
+@import 'sections/about/certifications';
+
+// Services page sections styles.
+@import 'sections/services/hero';
+@import 'sections/services/healthcare';
+@import 'sections/services/quality';
+@import 'sections/services/program';
+@import 'sections/services/data';
+
+// Technology page sections styles.
+@import 'sections/technology/hero';
+@import 'sections/technology/tech';
+@import 'sections/technology/artificial';
+@import 'sections/technology/information';
+@import 'sections/technology/software';
+
+// News page sections styles.
+@import 'sections/news/hero';
+@import 'sections/news/cards';
+@import 'sections/news/news-link';
+@import 'sections/news/news-info';
+
+// Career page sections styles.
+@import 'sections/career/hero';
+
+// Contact page sections styles.
+@import 'sections/contact/contact';
+@import 'sections/contact/map';
+
+// Ethics page sections styles.
+@import 'sections/ethics/hero';

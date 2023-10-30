@@ -1,0 +1,162 @@
+.serves {
+	padding: 136px 0 60px;
+
+	@media all and (min-width: $lg) {
+		padding: 83px 0 140px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		@media all and (min-width: $xl) {
+			flex-direction: row;
+		}
+	}
+
+	&__block {
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		background-color: $blue;
+		padding: 60px 32px 50px 32px;
+
+		@media all and (min-width: $md) {
+			padding: 75px 60px 70px 60px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-left: 0;
+			width: 100%;
+		}
+
+		@media all and (min-width: $xl) {
+			max-width: 860px;
+		}
+
+		.section__text {
+			color: $white;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__title {
+		color: $white;
+		font-family: $ff-title;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 120%;
+		margin-bottom: 4px;
+
+		@media all and (min-width: $md) {
+			font-size: 56px;
+			margin-bottom: 13px;
+		}
+
+		span {
+			opacity: 0.5;
+		}
+
+		br {
+			display: none;
+
+			@media all and (min-width: $md) {
+				display: block;
+			}			
+		}
+	}
+
+	&__img {
+		width: 100vw;
+		height: 268px;
+		margin-left: calc(50% - 50vw);
+
+		@media all and (min-width: $sm) {
+			height: 522px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-left: 0;
+			width: 468px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.serves__info {
+		padding: 20px;
+		background-color: $white;
+		width: 100%;
+		max-width: 353px;
+		position: absolute;
+		bottom: -178px;
+		right: 50%;
+		transform: translateX(50%);
+
+		@media all and (min-width: $xm) {
+			max-width: 739px;
+			padding: 48px;
+		}
+
+		@media all and (min-width: $lg) {
+			bottom: -134px;
+			right: 50px;
+			transform: translateX(0);
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 20px;
+			max-width: 600px;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 48px;
+			max-width: 739px;
+		}
+		
+		&_wrapper {
+			display: flex;
+		}
+
+		&_left {
+			width: 40%;
+			max-width: 240px;
+			border-right: 1px solid #DBDBDB;
+			padding-right: 16px;
+
+			@media all and (min-width: $md) {
+				padding-right: 40px;
+			}
+		}
+
+		&_right {
+			width: 60%;
+			padding-left: 16px;
+
+			@media all and (min-width: $md) {
+				padding-left: 40px;
+				width: calc(100% - 240px);
+			}
+		}
+
+		&_title {
+			color: var(--Blue, #1B3664);
+			font-family: $ff-title;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: 120%;
+			margin-bottom: 10px;
+
+			@media all and (min-width: $md) {
+				font-size: 56px;
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

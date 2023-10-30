@@ -1,0 +1,43 @@
+<section class="beneficiary">
+	<div class="container">
+		<div class="beneficiary__wrapper">
+			<div class="beneficiary__img">
+				<picture class="video__thumbs">
+					<source type="image/webp" media="(min-width: 0px) and (max-width: 768px)" srcset="img/home/beneficiary/beneficiary-mob.webp">
+					<source type="image/png" media="(min-width: 0px) and (max-width: 768px)" srcset="img/home/beneficiary/beneficiary-mob.png">
+					<source type="image/webp" media="(min-width: 768px)" srcset="img/home/beneficiary/beneficiary-img.webp">
+					<img src="img/home/beneficiary/beneficiary-img.png" width="600" height="600" loading="lazy"  alt="" />
+				</picture>	
+			</div>
+			@@include('../../components/h2.html', {'subtitle': 'Beneficiary', 'title':'Beneficiary and Caregiver Services'})
+			<div class="beneficiary__inner">
+				<div class="box-shadow-wrapper beneficiary__contact_wrapper">
+					<div class="beneficiary__contact_inner">
+						<p class="section__text beneficiary__contact_text">
+							We empower patients and caregivers, helping them navigate the healthcare system with knowledge and respect.
+						</p>
+						<p class="section__text beneficiary__contact_text">
+							Engaging directly with patients and their families, Livanta offers a patient-centered approach to case review and advocacy services. Livanta's skilled clinical staff empowers patients to make informed decisions regarding their plans of care and to navigate their care transitions effectively.
+						</p>
+						<button class="button" onclick="window.location='contacts.html'">
+							contact us
+						</button>
+					</div>
+				</div>
+				<ul class="beneficiary__list">
+					@@loop('./list-item.html', [
+						{
+							'src': 'img/icons/home/beneficiary/heart.svg', 'text': 'Innovators of beneficiary and caregiver engagement, the staff of Livanta\’s specialty call center are trained to assess patients\’ needs and goals to advocate for their health successes.'
+						},
+						{
+							'src': 'img/icons/home/beneficiary/meds.svg', 'text': 'Livanta\’s experienced clinical staff includes physicians, nurses, social workers, and other healthcare professionals.'
+						},
+						{
+							'src': 'img/icons/home/beneficiary/chat.svg', 'text': 'Offering cultural and linguistic competence as the largest Medicare Quality Improvement Organization (QIO), Livanta\’s professionals provide navigation and review services to help persons and their caregivers overcome health and wellness barriers across the full care continuum.'
+						},
+					])
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,178 @@
+.government {
+	padding: 30px 0 64px;
+	background-color: #F4F4F4;
+
+	.container {
+		@media all and (min-width: $lg) {
+			padding-left: 0;
+		}
+	}
+
+	.item__image {
+		background-color: $white;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 60px 0 64px;
+	}
+
+	.h2__wrapper {
+		margin-bottom: 18px;
+
+		@media all and (min-width: $xm) {
+			margin-bottom: 23px;
+		}
+	}
+
+	.section__text {
+		margin-bottom: 19px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 30px;
+		}
+	}
+	
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 31px 0 20px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row-reverse;
+			padding: 60px 52px 53px 0;
+		}
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 692px;
+		order: 2;
+
+		@media all and (min-width: $lg) {
+			order: 1;
+			max-width: 550px;
+		}
+
+		@media all and (min-width: $xxl) {
+			max-width: 692px;
+		}
+	}
+
+	&__items {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		@media all and (min-width: $xm) {
+			margin: 0 -12px;
+		}
+	}
+
+	&__item {
+		width: calc(100% /1);
+		margin-bottom: 10px;
+
+		@media all and (min-width: $xl) {
+			width: calc(100% / 2);
+			padding: 0 12px;
+			margin-bottom: 24px;
+		}
+
+		&_inner {
+			display: flex;
+			flex-direction: row;
+			padding-bottom: 12px;
+			border-bottom: 1px solid #DBDBDB;
+
+			@media all and (min-width: $xm) {
+				padding-bottom: 0;
+				border: 0;
+			}
+
+			@media all and (min-width: $md) {
+				flex-direction: column;
+			}
+		}
+
+		&_text {
+			width: calc(100% - 55px);
+			color: $grey;
+			font-family: $ff;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: 160%;
+			margin-left: 15px;
+
+			@media all and (min-width: $md) {
+				font-size: 14px;
+				margin-left: 0;
+			}
+
+			@media all and (min-width: $xl) {
+				width: 100%;
+			}
+		}
+	}
+
+	.item__image {
+		margin-bottom: 13px;
+	}
+
+	&__img {
+		height: 426px;
+		width: 100vw;
+		order: 1;
+		margin-left: calc(50% - 50vw);
+
+		@media all and (min-width: $xm) {
+			width: 552px;
+			margin: 0 auto;
+		}
+
+		@media all and (min-width: $lg) {
+			margin: 0 40px 0 0;
+			height: 640px;
+			width: 552px;
+			order: 2;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: auto;
+		}
+
+		@media all and (min-width: $xxl) {
+			transform: translateX(-30px);
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&.mobile {
+			margin-bottom: 20px;
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+		}
+
+		&.desktop {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: block;
+			}
+		}
+	}
+
+	.button {
+		margin-top: 8px;
+
+		@media all and (min-width: $md) {
+			margin-top: 17px;
+		}
+	}
+}

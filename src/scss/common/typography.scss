@@ -1,0 +1,78 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: $ff-title;
+	font-weight: $fw-bold;
+	line-height: $lh-title;
+	margin: 0;
+}
+
+h1, .h1 {
+	color: $white;
+	font-family: $ff-title;
+	font-size: 44px;
+	font-style: normal;
+	font-weight: $fw-semibold;
+	line-height: $lh-h1;
+	margin-bottom: 10px;
+
+	@media all and (min-width: $md) {
+		font-size: 70px;
+		margin-bottom: 23px;
+	}
+}
+
+h2, .h2 {
+	color: var(--Gentle-black, #061021);
+	font-family: Kanit;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: $lh-title;
+
+	@media all and (min-width: $md) {
+		font-size: 56px
+	}
+}
+
+h3, .h3 {
+	font-size: 30px
+}
+
+h4, .h4 {
+	font-size: $fs-xl;
+
+	@media all and (min-width: $lg) {
+		font-size: 24px
+	}
+}
+
+h5, .h5 {
+	font-size: $fs-xl
+}
+
+h6, .h6 {
+	font-size: $fs-lg
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	transition: opacity ease-out $tr;
+	cursor: pointer;
+
+	&:hover {
+		opacity: $op;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+b, strong {
+	font-weight: $fw-bold
+}

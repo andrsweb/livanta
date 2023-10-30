@@ -1,0 +1,91 @@
+.healthcare {
+	padding: 60px 0 70px;
+
+	@media all and (min-width: $lg) {
+		padding: 285px 0 110px;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right: -76px;
+		top: 60px;
+		z-index: -1;
+		width: 266px;
+		height: 325px;
+		object-fit: cover;
+
+		@media all and (min-width: $md) {
+			width: 720px;
+			height: 620px;
+		}
+
+		@media all and (min-width: $lg) {
+			right: -140px;
+			top: -165px;
+		}
+	}
+
+	.healthcare__subtitle {
+		font-size: 14px;
+		margin-top: 60px;
+
+		@media all and (min-width: $md) {
+			font-size: 18px;
+			margin-top: 180px;
+		}
+	}
+
+	.section__text {
+		&:first-child {
+			max-width: 254px;
+			margin-bottom: 55px;
+
+			@media all and (min-width: $md) {
+				padding-top: 20px;
+				margin-right: 65px;
+			}
+		}
+
+		&.last_text {
+			margin-top: 58px;
+			max-width: 542px;
+		}
+	}
+
+	.h2__wrapper {
+		.subtitle {
+			font-family: $ff-title;
+			font-size: 44px;
+			text-transform: capitalize;
+			font-weight: $fw-semibold;
+
+			@media all and (min-width: $lg) {
+				font-size: 70px;
+			}
+		}
+
+		.h2 {
+			font-family: $ff-title;
+			font-size: 44px;
+			font-weight: $fw-semibold;
+
+			@media all and (min-width: $lg) {
+				font-size: 70px;
+			}
+		}
+	}
+}

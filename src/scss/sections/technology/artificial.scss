@@ -1,0 +1,136 @@
+.artificial {
+	padding: 15px 0 80px;
+
+	@media all and (min-width: $lg) {
+		padding: 15px 0 140px;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&__heading {
+		color: $gentle-black;
+		font-family: $ff-title;
+		font-size: 44px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: 110%;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 70px;
+			margin-bottom: 40px;
+		}
+
+		&:first-child {
+			color: $red;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__img {
+		width: 320px;
+		height: 250px;
+		position: absolute;
+		left: -20px;
+		top: 43px;
+
+		@media all and (min-width: $lg) {
+			width: 530px;
+			height: 250px;
+			left: -125px;
+			top: 173px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__left {
+		max-width: 295px;
+		position: relative;
+		padding-top: 15px;
+		margin-bottom: 220px;
+		
+
+		@media all and (min-width: $lg) {
+			margin-right: 132px;
+			max-width: 367px;
+		}
+	}
+
+	&__mobile_text {
+		display: block;
+		color: $grey;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: $lh;
+		margin-top: 30px;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
+	&__list_wrapper {
+		flex-direction: column;
+		margin-top: 100px;
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: flex;
+		}
+	}
+
+	&__list {
+		display: flex;
+
+		&_text {
+			color: $grey;
+			font-family: $ff;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			line-height: $lh;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		color: $grey;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: $lh;
+		margin-right: 24px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		img {
+			margin-right: 8px;
+		}
+	}
+}

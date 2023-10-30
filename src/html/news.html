@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">	
+
+	<title>News page</title>
+	<!-- Css styles -->
+	<link rel="stylesheet" href="css/main.min.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a class="header__logo" href="/">
+						<img src="img/header/logo-color.svg" width="160" height="34" alt="">
+					</a>
+					<div class="header__inner" id="menu-lock">
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__list_item">
+									<a class="header__list_link" href="about.html">
+										About
+									</a>
+								</li>
+								<li class="header__list_item">
+									<a href="services.html" class="header__list_link">
+										Services
+									</a>
+								</li>
+								<li class="header__list_item">
+									<a href="technology.html" class="header__list_link">
+										Technology
+									</a>
+								</li>
+								<li class="header__list_item">
+									<div class="header__list_link active">
+										News
+									</div>
+								</li>
+								<li class="header__list_item">
+									<a class="header__list_link" href="career.html">
+										Career
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__buttons">
+							<button class="button header-button" type="button" onclick="window.location='contacts.html'">
+								Contact us
+							</button>
+						</div>
+					</div>
+					<div class="burger__button">
+						<svg class="burger__image" viewBox="20 18 65 65">
+							<path class="burger__top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+							<path class="burger__middle" d="m 30,50 h 40" />
+							<path class="burger__bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+
+<main>
+	@@include( 'template-parts/sections/news/hero.html' )
+	@@include( 'template-parts/sections/news/cards.html' )
+</main>
+
+@@include( 'template-parts/footer/footer.html' )
+

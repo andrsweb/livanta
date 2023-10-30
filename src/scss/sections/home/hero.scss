@@ -1,0 +1,56 @@
+.hero {
+	position: relative;
+	padding: 50vw 0 20vw;
+
+	@media all and (min-width: $sm) {
+		padding: 30vw 0;
+	}
+
+	@media all and (min-width: $md) {
+		padding:  20.5vw 0 7.5vw;
+	}
+
+	@media all and (min-width: $lg) {
+		padding:  10.5vw 0 7.5vw;
+		min-height: 100dvh;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		z-index: 2;
+		
+		@media all and (min-width: $lg) {
+			min-height: auto;
+		}
+	}
+
+	&__heading {
+		width: 100%;
+		max-width: 668px;
+		position: relative;
+	}
+
+	&__text {
+		color: $white;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-medium;
+		line-height: $lh;
+		width: 100%;
+		max-width: 547px;
+		margin-bottom: 48px;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+			margin-bottom: 38px;
+		}
+	}
+}
+

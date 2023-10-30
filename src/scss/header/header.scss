@@ -1,0 +1,177 @@
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: white;
+	padding: 16px 0;
+	transition: box-shadow ease $tr;
+
+	@media all and (min-width: $lg) {
+		padding: 0;
+	}
+
+	&.scrolled {
+		box-shadow: 2px 2px 8px #1111112f;
+	}
+
+	.container {
+		max-width: $xxxl;
+	}
+
+	&__logo {
+		width: 134px;
+		height: 28px;
+		margin-right: auto;
+		position: relative;
+
+		@media all and (min-width: $lg) {
+			width: 160px;
+			height: 34px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@media all and (min-width: 1600px) {
+			padding-left: 47px;
+		}
+	}
+
+	&__inner {
+		display: none;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+		}
+
+		&.opened {
+			display: flex;
+			position: fixed;
+			background-color: $white;
+			left: 0;
+			top: 60px;
+			flex-direction: column;
+			width: 100%;
+			height: calc(100dvh - 60px);
+			padding: 50px 20px 20px;
+			overflow-y: auto;
+			animation: transl $tr forwards linear;
+
+			@keyframes transl {
+				0% {
+					display: none;
+					opacity: 0;
+					transform: translateY(100%);
+				}
+
+				100% {
+					display: flex;
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			.header__nav {
+				width: 100%;
+			}
+
+			.header__list {
+				flex-direction: column;
+				align-items: flex-start;
+
+				div {
+					display: inline;
+					text-align: left;
+				}
+
+				&_item {
+					width: 100%;
+					padding-bottom: 19px;
+					margin-right: 0;
+					margin-bottom: 20px;
+					border-bottom: 1px solid #DBDBDB;
+				}
+
+				&_link {
+					font-size: 20px;
+					color: $black;
+				}
+			}
+
+			.header__buttons {
+				align-items: center;
+				width: 100%;
+				margin-left: 0;
+				margin-top: auto;
+			}
+		}
+
+		&.closed {
+			animation: fade2 $tr forwards linear;
+
+			@keyframes fade2 {
+				0% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+
+				100% {
+					opacity: 0;
+					transform: translateY(-100%);
+				}
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+
+		&_item {
+			margin-right: 52px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&_link {
+			color: $blue;
+			text-align: center;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-medium;
+			line-height: $lh;
+			position: relative;
+
+			&.active {
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 2px;
+					background-color: $blue;
+				}
+				
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		margin-left: 50px;
+	}
+
+	.burger__image path {
+		stroke: $blue;
+	}
+}

@@ -1,0 +1,15 @@
+.subtitle {
+	color: $red;
+	font-family: $ff;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+
+	@media all and (min-width: $md) {
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+}

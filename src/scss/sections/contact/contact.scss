@@ -1,0 +1,313 @@
+.contact-hero {
+	padding: 180px 0 50px;
+	position: relative;
+	background-color: #F4F4F4;
+	z-index: 1;
+
+	@media all and (min-width: $lg) {
+		padding: 180px 0 120px;
+	}
+
+	.contact__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 494px;
+		z-index: -1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.contact__learn {
+		&_title {
+			margin-bottom: 24px;
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			line-height: $lh;
+		}
+
+		&_item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 12px;
+			border-bottom: 1px solid #DBDBDB;
+			margin-bottom: 12px;
+
+			@media all and (min-width: $md) {
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+
+			&:nth-child(2) {
+				padding: 12px 0;
+
+				@media all and (min-width: $md) {
+					padding: 20px 0;
+				}
+			}
+
+			&:last-child {
+				padding-top: 12px;
+				border: 0;
+				margin-bottom: 0;
+
+				@media all and (min-width: $md) {
+					padding-top: 20px;
+				}
+			}
+
+			img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&_text {
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: $lh;
+			width: 80%;
+
+			@media all and (min-width: $md) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.contact__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		@media all and (min-width: $xl) {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+
+	.contact__left {
+		max-width: 504px;
+	}
+
+	.h1 {
+		color: $white;
+		font-family: $ff-title;
+		font-size: 44px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: 110%;
+		margin-bottom: 36px;
+
+		@media all and (min-width: $md) {
+			font-size: 70px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.contact__info {
+		color: $white;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: $lh;
+		margin-bottom: 164px;
+
+		@media all and (min-width: $md) {
+			font-size: 18px;
+			margin-bottom: 174px;
+		}
+
+		a {
+			font-weight: $fw-bold;
+			color: $white;
+		}
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		max-width: 640px;
+		padding: 16px;
+		background-color: $white;
+
+		@media all and (min-width: $md) {
+			padding: 36px;
+		}
+
+		fieldset {
+			display: flex;
+			flex-direction: column;
+		}
+
+		legend {
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			line-height: $lh;
+			margin-bottom: 16px;
+
+			@media all and (min-width: $md) {
+				font-size: 24px;
+				margin-bottom: 36px;
+			}
+		}
+
+		label {
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: $lh;
+			margin-bottom: 12px;
+
+			@media all and (min-width: $md) {
+				font-size: 18px;
+			}
+		}
+
+		input {
+			margin-bottom: 12px;
+
+			@media all and (min-width: $md) {
+				margin-bottom: 28px;
+			}
+		}
+
+		.radio__wrapper {
+			display: flex;
+			align-items: center;
+			margin-bottom: 16px;
+
+			@media all and (min-width: $md) {
+				margin-bottom: 28px;
+			}
+
+			label, input {
+				margin-bottom: 0;
+			}
+		}
+
+		.radio__buttons {
+			display: flex;
+			flex-direction: column;
+
+			@media all and (min-width: $md) {
+				flex-direction: row;
+			}
+		}
+
+		.radio {
+			margin-right: 12px;
+
+			label {
+				font-weight: $fw-semibold;
+			}
+
+			input {
+				width: 16px;
+				height: 16px;
+				filter: grayscale(100%);
+
+				@media all and (min-width: $md) {
+					width: 20px;
+					height: 20px;
+				}
+			}
+
+			&__title {
+				color: $gentle-black;
+				font-family: $ff;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: $fw-regular;
+				line-height: $lh;
+				margin-right: 10px;
+
+				@media all and (min-width: $md) {
+					font-size: 18px;
+					margin-right: 20px;
+				}
+			}
+		}
+
+		textarea {
+			padding: 12px;
+			border: 1px solid #DBDBDB;
+			resize: none;
+			min-height: 120px;
+			color: #9F9F9F;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: 160%;
+
+			@media all and (min-width: $md) {
+				font-size: 18px;
+				padding: 16px;
+				min-height: 156px;
+			}
+		}
+
+		.captcha__wrapper {
+			display: flex;
+			align-items: center;
+			margin-bottom: 28px;
+
+			input {
+				width: 100%;
+				max-width: 374px;
+				margin-right: 18px;
+				margin-bottom: 0;
+			}
+
+			.captcha__items {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 10px;
+				background-color: $blue;
+				color: $white;
+				font-family: $ff;
+				font-size: 16px;
+				font-style: italic;
+				font-weight: $fw-semibold;
+				line-height: $lh;
+
+				@media all and (min-width: $md) {
+					padding: 8px 41px;
+					font-size: 28px;
+				}
+			}
+		}
+
+		.required {
+			padding: 12px;
+			background-color: #F4F4F4;
+			color: $gentle-black;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: $lh;
+			margin-bottom: 28px;
+		}
+	}
+}
