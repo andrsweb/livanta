@@ -1,35 +1,52 @@
 .scroll__wrapper {
 	padding-left: 5px;
-}
 
-.scroll__down {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	max-width: 197px;
-
-	&_text {
-		color: $white;
-		font-family: $ff;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: $fw-semibold;
-		line-height: $lh;
-
-		@media all and (min-width: $lg) {
-			font-size: 20px;
+	.scroll__down {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 197px;
+	
+		&_text {
+			color: $white;
+			font-family: $ff;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			line-height: $lh;
+			transition: color ease $tr;
+	
+			@media all and (min-width: $lg) {
+				font-size: 20px;
+			}
 		}
-	}
-
-	svg {
-		width: 24px;
-		height: 24px;
-		margin-right: 8px;
-
-		@media all and (min-width: $lg) {
-			width: 32px;
-			height: 32px;
-			margin-right: 14px;
+	
+		svg {
+			width: 24px;
+			height: 24px;
+			margin-right: 8px;
+	
+			path {
+				transition: fill ease $tr;
+			}
+	
+			@media all and (min-width: $lg) {
+				width: 32px;
+				height: 32px;
+				margin-right: 14px;
+			}
+		}
+	
+		&:hover {
+			opacity: 1;
+	
+			.scroll__down_text {
+				color: $red;
+			}
+	
+			svg path {
+				fill: $red;
+			}
 		}
 	}
 }

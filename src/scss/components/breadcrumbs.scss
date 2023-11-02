@@ -7,12 +7,26 @@
 	font-style: normal;
 	font-weight: $fw-semibold;
 	line-height: $lh;
+	transition: color ease $tr;
 
 	@media all and (min-width: $md) {
 		font-size: 16px;
 	}
 
-	img {
+	svg {
 		margin-right: 8px;
+
+		path {
+			transition: fill ease $tr;
+		}
+	}
+
+	&:hover {
+		opacity: 1;
+		color: $red;
+
+		svg path {
+			fill: $red;
+		}
 	}
 }

@@ -1,0 +1,62 @@
+.quality-policy {
+	padding: 30px 0;
+	background-color: #F4F4F4;
+
+	@media all and (min-width: $lg) {
+		padding: 60px 0;
+	}
+
+	.container {
+		max-width: $xl;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 16px;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			padding: 48px;
+		}
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 390px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+			margin-right: 32px;
+		}
+	}
+
+	&__title {
+		color: $gentle-black;
+		font-family: $ff;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: $lh;
+		margin-bottom: 8px;
+
+		@media all and (min-width: $md) {
+			font-style: 24px;
+		}
+	}
+
+	&__list {
+		list-style: disc;
+		padding-left: 20px;
+	}
+
+	&__item {
+		color: $grey;
+		font-family: $ff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: $lh;
+	}
+}

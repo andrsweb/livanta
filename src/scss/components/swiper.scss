@@ -12,9 +12,22 @@
 	cursor: pointer;
 	transition: opacity ease $tr;
 	margin-right: 12px;
+	transition: background-color ease $tr;
 
 	&:hover {
-		opacity: $op;
+		background-color: $gentle-black;
+
+		svg path {
+			fill: $white;
+		}
+	}
+
+	&:active {
+		background-color: $grey;
+
+		svg path {
+			fill: $white;
+		}
 	}
 
 	&:last-child {
@@ -26,9 +39,14 @@
 		height: 48px;
 	}
 
-	img {
+	svg  {
 		width: 16px;
 		height: 10px;
+
+		path {
+			fill: $gentle-black;
+			transition: fill ease $tr;
+		}
 
 		@media all and (min-width: $lg) {
 			width: 24px;

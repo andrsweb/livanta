@@ -31,7 +31,7 @@ const submitForm = ( selector ) => {
 					if( request.response.success ){
 						form.classList.add( 'success' )
 						form.classList.remove( 'error' )
-						form.innerHTML = request.response.message
+						formResponse.textContent = request.response.message
 					}	else {
 						formResponse.classList.remove( 'success' )
 						formResponse.classList.add( 'error' )

@@ -20,7 +20,7 @@ const swiperInit = (selector, next, prev) => {
 			prevEl: prev,
 		},
 
-		speed: 2000,
+		speed: 1000,
 
 		breakpoints: {
 			320: {
@@ -81,6 +81,7 @@ const sliderThumbs = new Swiper('.slider-thumbs .swiper-container', {
 	spaceBetween: 20,
 	modules: [Thumbs],
 	freeMode: true,
+	
 
 	breakpoints: {
 		320: {
@@ -89,6 +90,7 @@ const sliderThumbs = new Swiper('.slider-thumbs .swiper-container', {
 
 		992: {
 			direction: 'vertical',
+			allowTouchMove: false
 		}
 	},
 });

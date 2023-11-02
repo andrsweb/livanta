@@ -252,7 +252,7 @@
 			border: 1px solid #DBDBDB;
 			resize: none;
 			min-height: 120px;
-			color: #9F9F9F;
+			color: $gentle-black;
 			font-family: $ff;
 			font-size: 14px;
 			font-style: normal;
@@ -263,6 +263,10 @@
 				font-size: 18px;
 				padding: 16px;
 				min-height: 156px;
+			}
+
+			&::placeholder {
+				opacity: 1;
 			}
 		}
 

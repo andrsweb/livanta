@@ -37,6 +37,14 @@
 			margin-left: 8px;
 		}
 	}
+
+	&:hover {
+		background-color: $gentle-black;
+	}
+
+	&:active {
+		background-color: $grey;
+	}
 }
 
 .burger__button {
@@ -148,6 +156,12 @@
 		display: none;
 	}
 
+	#circle-bg {
+		transition: fill ease $tr,
+				fill-opacity ease $tr,
+				stroke ease $tr;
+	}
+
 	#svg__circle-1 {
 		animation: radius1 1.5s ease-in-out infinite;
 
@@ -180,12 +194,20 @@
 	&:hover {
 		scale: 1.1;
 
+		#circle-bg  {
+			fill: $red;
+			fill-opacity: 1;
+			stroke: $red;
+		}
+
 		#svg__circle-1 {
 			animation: radius1 1s ease-in-out infinite;
+			stroke: $red;
 		}
 		#svg__circle-2 {
 			animation: radius2 1.5s ease infinite;
 			animation-delay: 0.2s;
+			stroke: $red
 		}
 	}
 }

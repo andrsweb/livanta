@@ -35,7 +35,7 @@ form, fieldset {
 
 input {
 	border: 1px solid #DBDBDB; 
-	color: #9F9F9F;
+	color: $gentle-black;
 	font-family: $ff;
 	font-size: 14px;
 	font-style: normal;
@@ -49,16 +49,25 @@ input {
 	}
 
 	&::placeholder {
-		color: #9F9F9F;
+		color: $gentle-black;
 		font-family: $ff;
 		font-size: 14px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: $lh;
+		opacity: 1;
 
 		@media all and (min-width: $lg) {
 			font-size: 18px;
 		}
+	}
+
+	&:focus {
+		border-color: $blue;
+	}
+
+	&:hover {
+		border-color: #A6A6A6;;
 	}
 }
 
@@ -72,11 +81,7 @@ button {
 	border: 0;
 	cursor: pointer;
 	background-color: transparent;
-	transition: opacity ease $tr;
-
-	&:hover {
-		opacity: $op;
-	}
+	transition: background-color ease $tr;
 }
 
 .wrapper {

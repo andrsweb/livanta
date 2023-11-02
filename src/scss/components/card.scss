@@ -71,6 +71,7 @@
 		font-weight: $fw-medium;
 		line-height: $lh;
 		text-transform: uppercase;
+		transition: color ease $tr;
 
 		&_wrapper {
 			display: flex;
@@ -78,8 +79,21 @@
 			margin-right: 22px;
 		}
 
-		img {
+		svg {
 			margin-left: 8px;
+
+			path {
+				transition: fill ease $tr;
+			}
+		}
+
+		&:hover {
+			opacity: 1;
+			color: $gentle-black;
+
+			svg path {
+				fill: $gentle-black;
+			}
 		}
 
 		@media all and (min-width: $md) {
