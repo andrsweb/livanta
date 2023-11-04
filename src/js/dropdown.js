@@ -40,7 +40,7 @@ window.addEventListener('resize', () => {
     dropdowns.forEach(dropdown => reCalculateDropdownHeight(dropdown))
 })
 
-const reCalculateDropdownHeight = dropdown => {
+export const reCalculateDropdownHeight = dropdown => {
     const dropdownOpen  = dropdown.querySelector( '.dropdown-open' ),
         dropdownInner   = dropdown.querySelector( '.dropdown-inner' )
 

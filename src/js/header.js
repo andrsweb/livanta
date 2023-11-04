@@ -34,8 +34,11 @@ const toggleBurgerMenu = () => {
 			setTimeout(() => headerInner.classList.remove('closed'), 350);
 			enableBodyScroll(getTargetElement())
 		}
-
 	})
+
+	if(window.scrollY > 0) {
+		header.classList.add('scrolled')
+	}
 
 	window.addEventListener('resize', () => {
 		if(window.innerWidth >= 992) {

@@ -20,7 +20,7 @@ const swiperInit = (selector, next, prev) => {
 			prevEl: prev,
 		},
 
-		speed: 1000,
+		speed: 500,
 
 		breakpoints: {
 			320: {
@@ -55,7 +55,7 @@ const swiperInitWithBar = (selector, next, prev) => {
 			el: '.swiper-scrollbar',
 		},
 
-		speed: 2000,
+		speed: 500,
 
 		breakpoints: {
 			320: {

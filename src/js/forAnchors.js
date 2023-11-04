@@ -19,7 +19,7 @@ const smoothScrollForAnchors = () => {
 
 			document.getElementById( blockID ).scrollIntoView( {
 				behavior: 'smooth',
-				block: 'start'
+				block: 'start',
 			} )
 		} )
 	}
