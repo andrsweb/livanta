@@ -1,12 +1,22 @@
 .data {
 	padding-bottom: 30px;
+	margin-bottom: -30px;
 
 	@media all and (min-width: $lg) {
-		padding-bottom: 60px;
+		padding-bottom: 0;
+		margin-bottom: -60px;
 	}
 
 	.container {
 		max-width: $xl;
+	}
+
+	.services__dropdowns {
+		transform: translateY(-20%);
+
+		@media all and (min-width: $xxl) {
+			transform: translateY(-45%);
+		}
 	}
 }
 
