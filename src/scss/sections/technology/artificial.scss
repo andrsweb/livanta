@@ -26,6 +26,17 @@
 		font-weight: $fw-semibold;
 		line-height: 110%;
 		margin-bottom: 20px;
+		animation: change-color1 3s infinite alternate-reverse ease;
+
+		@keyframes change-color1 {
+			0% {
+				color: $red;
+			}
+
+			100% {
+				color: $gentle-black;
+			}
+		}
 
 		@media all and (min-width: $lg) {
 			font-size: 70px;
@@ -36,8 +47,18 @@
 			color: $red;
 		}
 
+		&:nth-child(2) {
+			animation: change-color1 3s infinite alternate-reverse ease ;
+			animation-delay: 2s;
+		}
+
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		&.last {
+			animation: change-color1 3s infinite alternate-reverse ease ;
+			animation-delay: 4s;
 		}
 	}
 

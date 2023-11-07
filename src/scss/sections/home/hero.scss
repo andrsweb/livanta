@@ -19,13 +19,29 @@
 		max-width: $xl;
 	}
 
-	&-bg__img {
-		width: 100%;
-		height: 100%;
+	.hero__overlay {
 		position: absolute;
 		left: 0;
 		top: 0;
-		object-fit: cover;
+		width: 100%;
+		height: 100%;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0.00) 74.24%);
+		}
+
+		.hero-bg__img {
+			width: 100%;
+			height: 100%;	
+			object-fit: cover;
+		}
 	}
 
 	&__wrapper {
