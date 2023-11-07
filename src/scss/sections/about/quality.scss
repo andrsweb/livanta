@@ -1,6 +1,6 @@
 .quality-policy {
 	padding: 30px 0;
-	background-color: #F4F4F4;
+	
 
 	@media all and (min-width: $lg) {
 		padding: 60px 0;
@@ -14,6 +14,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 16px;
+		background-color: #F4F4F4;
 
 		@media all and (min-width: $md) {
 			flex-direction: row;

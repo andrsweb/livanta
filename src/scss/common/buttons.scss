@@ -150,10 +150,6 @@
 		}
 	}
 
-	&.played {
-		display: none;
-	}
-
 	#circle-bg {
 		transition: fill ease $tr,
 				fill-opacity ease $tr,

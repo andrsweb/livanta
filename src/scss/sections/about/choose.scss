@@ -1,6 +1,10 @@
 .choose {
 	padding: 24px 0;
-	background-color: #F4F4F4;
+	
+
+	.section__top {
+		background-color: #F4F4F4;
+	}
 
 	@media all and (min-width: $lg) {
 		padding: 120px 0 50px;

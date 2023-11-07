@@ -1,12 +1,11 @@
 .card {
-
 	&__inner {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		min-height: 389px;
 		padding-bottom: 24px;
-		box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.04);
+		box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.04); 
 
 		@media all and (min-width: $md) {
 			min-height: 442px;

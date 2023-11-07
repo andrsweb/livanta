@@ -67,15 +67,38 @@
 	}
 
 	.h2__wrapper {
+		animation: change-color 2s infinite ease alternate-reverse;
+
+		@keyframes change-color {
+			0% {
+				color: $red;
+			}
+
+			100% {
+				color: $gentle-black;
+			}
+		}
+
 		.subtitle {
 			font-family: $ff-title;
 			font-size: 44px;
 			text-transform: capitalize;
 			font-weight: $fw-semibold;
+			animation: change-color 3s infinite alternate-reverse ease;
 
 			@media all and (min-width: $lg) {
 				font-size: 70px;
 			}
+		}
+
+		.health-anim-1 {
+			animation: change-color 3s infinite alternate-reverse ease ;
+			animation-delay: 2s;
+		}
+
+		.health-anim-2 {
+			animation: change-color 3s infinite alternate-reverse ease ;
+			animation-delay: 4s;
 		}
 
 		.h2 {
