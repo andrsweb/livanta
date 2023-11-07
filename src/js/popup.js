@@ -11,6 +11,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	showPopup('.popup-wrapper.contracts-popup', '.call-contracts', '#contracts-popup')
 	showPopup('.popup-wrapper.vehicle-popup', '.call-vehicles', '#vehicle-popup')
 	showPopup('.popup-wrapper.current-popup', '.call-current', '#current-popup')
+	showPopup('.popup-wrapper.video-wrapper', '.play__button', '#video-popup')
 } )
 
 const showPopup = ( selector, btn, lock) => {

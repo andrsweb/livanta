@@ -78,6 +78,14 @@
 			}
 		}
 	}
+
+	&.video-wrapper {
+		background: rgba(0, 0, 0, 0.80);
+
+		.popup {
+			background-color: transparent;
+		}
+	}
 }
 
 // Leadership popup
