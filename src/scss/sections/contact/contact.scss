@@ -84,6 +84,23 @@
 				font-size: 18px;
 			}
 		}
+
+		&.desktop {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: block;
+			}
+		}
+
+		&.mobile {
+			display: block;
+			margin-top: -100px;
+			
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+		}
 	}
 
 	.contact__wrapper {
@@ -143,9 +160,14 @@
 		max-width: 640px;
 		padding: 16px;
 		background-color: $white;
+		transform: translateY(-15%);
 
 		@media all and (min-width: $md) {
 			padding: 36px;
+		}
+
+		@media all and (min-width: $lg) {
+			transform: translateY(0);
 		}
 
 		fieldset {
