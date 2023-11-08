@@ -3,19 +3,21 @@
 	padding-bottom: 30px;
 
 	@media all and (min-width: $lg) {
-		padding-bottom: 0;
+		padding-bottom: 60px;
 	}
 
 	.container {
-		max-width: $xl;
+		max-width: 1332px;
+	}
+
+	.quality__wrapper {
+		padding: 0;
 	}
 
 	.services__dropdowns {
 		background-color: #fbfbfb;
-		transform: translateY(-20%);
 
 		@media all and (min-width: $xxl) {
-			transform: translateY(-45%);
 		}
 	}
 }
