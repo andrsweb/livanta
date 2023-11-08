@@ -6,15 +6,13 @@
 	}
 
 	.container {
-		max-width: $xl;
+		max-width: 1400px;
 	}
 
 	.services__dropdowns {
 		background-color: #fbfbfb;
-		transform: translateY(-15%);
 
 		@media all and (min-width: $lg) {
-			transform: translateY(0);
 		}
 	}
 
@@ -48,6 +46,7 @@
 
 		@media all and (min-width: $lg) {
 			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
 
@@ -59,8 +58,7 @@
 		margin-left: calc(50% - 50vw);
 
 		@media all and (min-width: $xl) {
-			transform: translateX(-120px);
-			width: 346px;
+			width: 446px;
 			height: 500px;
 			margin-left: 0;
 			justify-content: flex-start;
@@ -76,8 +74,8 @@
 			}
 
 			@media all and (min-width: $xl) {
-				max-width: 446px;
-				height: auto;
+				width: 446px;
+				height: 500px;
 			}
 		}
 	}
