@@ -1,10 +1,13 @@
 <section class="program" id="program">
 	<div class="container">
-		@@include('../../components/dropdown-heading.html', {'src':'img/icons/services/ref.svg', 'h2': 'Program Integrity and Peer Review'})
 		<div class="program__wrapper">
-			<div class="program__img">
-				<img src="img/services/dropdowns/dropdown2.png" width="500" height="400" loading="lazy" alt="dropdown image">
+			<div class="programm__inner">
+				@@include('../../components/dropdown-heading.html', {'src':'img/icons/services/ref.svg', 'h2': 'Program Integrity and Peer Review'})
+				<div class="program__img">
+					<img src="img/services/dropdowns/dropdown2.png" width="500" height="400" loading="lazy" alt="dropdown image">
+				</div>
 			</div>
+			
 			<div class="services__dropdowns">
 				@@loop('../../components/dropdown-services.html', [
 					{

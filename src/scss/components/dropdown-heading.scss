@@ -1,11 +1,12 @@
 .dropdown-heading {
+	padding-top: 12px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 58px;
 
 	@media all and (min-width: $xl) {
 		flex-direction: row;
-		padding-top: 130px;
+		padding-top: 120px;
 	}
 
 	.h2 {
