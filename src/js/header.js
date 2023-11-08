@@ -47,20 +47,20 @@ const toggleBurgerMenu = () => {
 			burgerButton.classList.remove('opened')
 			enableBodyScroll(getTargetElement())
 		}
-
-		if(window.innerWidth < 992) {
-			menuLinks.forEach( link => {
-			
-				link.addEventListener('click', () => {
-					headerInner.classList.add('closed')
-					setTimeout(() => headerInner.classList.remove('opened'), 350);
-					burgerButton.classList.remove('opened')
-					setTimeout(() => headerInner.classList.remove('closed'), 350);
-					enableBodyScroll(getTargetElement())
-				})
-			})	
-		}
 	})
+
+	if(window.innerWidth < 992) {
+		menuLinks.forEach( link => {
+		
+			link.addEventListener('click', () => {
+				headerInner.classList.add('closed')
+				setTimeout(() => headerInner.classList.remove('opened'), 350);
+				burgerButton.classList.remove('opened')
+				setTimeout(() => headerInner.classList.remove('closed'), 350);
+				enableBodyScroll(getTargetElement())
+			})
+		})	
+	}
 }
 
 const headerScroll = () => {

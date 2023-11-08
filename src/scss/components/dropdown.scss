@@ -75,7 +75,11 @@
 .dropdown {
 	padding-bottom: 10px;
 	border-bottom: 1px solid#DBDBDB;
-	scroll-margin-top: 70px;
+	scroll-margin-top: 100px;
+
+	@media all and (min-width: $md) {
+		scroll-margin-top: 70px;
+	}
 
 	&:nth-child(n + 2 ) {
 		padding: 16px 0;
