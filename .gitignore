@@ -4,5 +4,6 @@ public/css
 public/js
 public/*.html
 public/deploy.php
+run_deploy.php
 *.sh
 logs/*
