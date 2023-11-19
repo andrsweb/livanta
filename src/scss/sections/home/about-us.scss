@@ -12,7 +12,6 @@
 	.h2 {
 		color: $white;
 		margin-bottom: 12px;
-
 		@media all and (min-width: $md) {
 			margin-bottom: 24px;
 		}
@@ -42,6 +41,7 @@
 		position: relative;
 		padding: 10vw 20px;
 		overflow: hidden;
+		background-color: rgba(17, 17, 17, 0.603);
 
 		@media all and (min-width: 393px) {
 			padding: 114px 124px 114px 20px;

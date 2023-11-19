@@ -103,6 +103,7 @@
 			font-style: normal;
 			font-weight: $fw-regular;
 			line-height: 140%;
+			background-color: $red;
 
 			@media all and (min-width: $md) {
 				font-size: 14px;
@@ -116,6 +117,7 @@
 			font-style: normal;
 			font-weight: $fw-semibold;
 			line-height: $lh;
+			background-color: $red;
 
 			@media all and (min-width: $md) {
 				font-size: 24px;
