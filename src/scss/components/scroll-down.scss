@@ -5,14 +5,14 @@
 		display: flex;
 		align-items: center;
 		width: 100%;
-		max-width: 197px;
+		max-width: 217px;
 	
 		&_text {
 			color: $white;
 			font-family: $ff;
 			font-size: 16px;
 			font-style: normal;
-			font-weight: $fw-semibold;
+			font-weight: $fw-regular;
 			line-height: $lh;
 			transition: color ease $tr;
 	
@@ -34,18 +34,6 @@
 				width: 32px;
 				height: 32px;
 				margin-right: 14px;
-			}
-		}
-	
-		&:hover {
-			opacity: 1;
-	
-			.scroll__down_text {
-				color: $red;
-			}
-	
-			svg path {
-				fill: $red;
 			}
 		}
 	}
