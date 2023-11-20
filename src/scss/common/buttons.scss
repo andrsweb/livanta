@@ -112,19 +112,19 @@
 	align-items: center;
 	position: absolute;
 	right: 0;
-	top: 100%;
+	top: 110%;
 	transform: translateY(-75%);
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	width: 114px;
+	width: 150px;
 	height: 60px;
 	border-radius: 50%;
 	transition: scale ease $tr;
 
 	@media all and (min-width: $lg) {
 		flex-direction: column;
-		width: 260px;
+		width: 290px;
 		height: 130px;
 		right: -6.6%;
 		top: 50%;
@@ -138,14 +138,17 @@
 	&_text {
 		color: $white;
 		font-family: $ff;
-		font-size: 12px;
+		font-size: 16px;
 		font-style: normal;
-		font-weight: $fw-medium;
+		font-weight: $fw-bold;
 		line-height: $lh-h1;
 		margin-left: 12px;
+		background-color: rgba(17, 17, 17, 0.603);
+		border-radius: 20px;
+		padding: 5px;
 
 		@media all and (min-width: $lg) {
-			font-size: 16px;
+			font-size: 20px;
 			margin-left: 16px;
 		}
 	}

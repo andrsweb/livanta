@@ -120,6 +120,7 @@
 	}
 
 	.h1 {
+		display: inline-block;
 		color: $white;
 		font-family: $ff-title;
 		font-size: 44px;
@@ -127,6 +128,7 @@
 		font-weight: $fw-semibold;
 		line-height: 110%;
 		margin-bottom: 36px;
+		background-color: $red;
 
 		@media all and (min-width: $md) {
 			font-size: 70px;
@@ -142,6 +144,7 @@
 		font-weight: $fw-regular;
 		line-height: $lh;
 		margin-bottom: 164px;
+		background-color: rgba(17, 17, 17, 0.795);
 
 		@media all and (min-width: $md) {
 			font-size: 18px;

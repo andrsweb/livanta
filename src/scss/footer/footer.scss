@@ -144,6 +144,14 @@
 				max-width: 142px;
 			}
 		}
+
+		.footer__hidden_label {
+			position: absolute;
+			clip: rect(0 0 0 0);
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+		}
 	}
 
 	&__nav {

@@ -40,7 +40,14 @@
 
 	&__heading {
 		width: 100%;
-		max-width: 667px;
+		max-width: 697px;
+		background-color: $red;
+		padding: 10px;
+		border-radius: 30px;
+
+		@media all and (min-width: $lg) {
+			padding: 30px;
+		}
 	}
 
 	&__subtitle {
