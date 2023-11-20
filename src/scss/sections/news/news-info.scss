@@ -74,7 +74,7 @@
 				font-weight: $fw-regular;
 				line-height: 140%;
 				margin-bottom: 8px;
-				background-color: $red;
+				background-color: rgba(17, 17, 17, 0.014);
 
 				@media all and (min-width: $md) {
 					font-size: 14px;
@@ -92,7 +92,7 @@
 				white-space: nowrap;
 				text-overflow: ellipsis;
 				overflow: hidden;
-				background-color: $red;
+				background-color: rgba(17, 17, 17, 0.014);
 
 				@media all and (min-width: $md) {
 					font-size: 18px;

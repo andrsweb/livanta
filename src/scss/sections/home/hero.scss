@@ -57,15 +57,10 @@
 
 	&__heading {
 		width: 100%;
-		max-width: 698px;
+		max-width: 638px;
 		position: relative;
-		background-color: $red;
-		padding: 10px;
+		background-color: rgba(17, 17, 17, 0.014);
 		border-radius: 20px;
-
-		@media all and (min-width: $lg) {
-			padding: 30px;
-		}
 	}
 
 	&__text {

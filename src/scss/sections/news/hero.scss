@@ -103,7 +103,7 @@
 			font-style: normal;
 			font-weight: $fw-regular;
 			line-height: 140%;
-			background-color: $red;
+			background-color: rgba(17, 17, 17, 0.014);
 
 			@media all and (min-width: $md) {
 				font-size: 14px;
@@ -117,7 +117,7 @@
 			font-style: normal;
 			font-weight: $fw-semibold;
 			line-height: $lh;
-			background-color: $red;
+			background-color: rgba(17, 17, 17, 0.014);
 
 			@media all and (min-width: $md) {
 				font-size: 24px;
