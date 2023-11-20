@@ -36,5 +36,17 @@
 				margin-right: 14px;
 			}
 		}
+
+		&:hover {
+			opacity: 1;
+	
+			svg path {
+				fill: $red
+			}
+	
+			.scroll__down_text {
+				color: $red;
+			}
+		}
 	}
 }
