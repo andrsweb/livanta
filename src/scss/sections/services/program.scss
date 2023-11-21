@@ -113,4 +113,12 @@
 			order: 1;
 		}
 	}
+
+	&__wrapper {
+		.dropdown-heading {
+				@media all and (min-width: $lg) {
+					padding-left: 45px;
+				}
+		}
+	}
 }

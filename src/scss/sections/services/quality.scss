@@ -142,6 +142,10 @@
 		top: 0;
 		z-index: -1;
 		margin-left: calc(50% - 50vw);
+
+		@media all and (min-width: $lg) {
+			height: 69.4%;
+		}
 	}
 
 	@media all and (min-width: $lg) {
