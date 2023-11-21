@@ -214,7 +214,7 @@
 		}
 
 		&_item {
-			margin-right: 52px;
+			margin-right: 40px;
 			cursor: pointer;
 			padding-right: 30px;
 
@@ -235,6 +235,10 @@
 
 			@media all and (min-width: $lg) {
 				padding: 16.5px 0;
+			}
+
+			@media all and (min-width: $xl) {
+				margin-right: 52px;
 			}
 		}
 

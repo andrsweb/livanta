@@ -1,6 +1,7 @@
 .services-hero {
 	padding: 110vw 0 15vw;
 	position: relative;
+	
 
 	@media all and (min-width: 420px) {
 		padding: 70vw 0 15vw;
@@ -15,8 +16,10 @@
 	}
 
 	@media all and (min-width: $lg) {
-		padding: 9.3vw 0 7.2vw;
-		min-height: 100dvh;
+		display: flex;
+		align-items: center;
+		min-height: calc(100dvh + 59.6px);
+		padding: 0;
 	}
 
 	.container {

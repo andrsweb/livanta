@@ -10,8 +10,10 @@
 	}
 	
 	@media all and (min-width: $lg) {
-		padding:  10.4vw 0 7.5vw;
-		min-height: 100dvh;
+		display: flex;
+		align-items: center;
+		min-height: calc(100dvh + 59.6px);
+		padding: 0;
 	}
 
 	&__wrapper {

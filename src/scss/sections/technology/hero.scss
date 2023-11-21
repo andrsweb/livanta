@@ -15,8 +15,10 @@
 	}
 
 	@media all and (min-width: $lg) {
-		padding: 9.3vw 0 8.2vw;
-		min-height: 100dvh;
+		display: flex;
+		align-items: center;
+		min-height: calc(100dvh + 59.6px);
+		padding: 0;
 	}
 
 	.container {

@@ -1,6 +1,8 @@
 .hero {
 	position: relative;
 	padding: 50vw 0 20vw;
+	display: flex;
+	align-items: center;
 
 	@media all and (min-width: $sm) {
 		padding: 30vw 0;
@@ -11,8 +13,10 @@
 	}
 
 	@media all and (min-width: $lg) {
-		padding:  10.5vw 0 7.5vw;
-		min-height: 100dvh;
+		display: flex;
+		align-items: center;
+		min-height: calc(100dvh + 59.6px);
+		padding: 0;
 	}
 
 	.container {
