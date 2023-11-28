@@ -110,19 +110,27 @@
 .play__button {
 	display: flex;
 	align-items: center;
-	position: absolute;
-	right: 0;
-	top: 110%;
-	transform: translateY(-75%);
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	width: 150px;
+	width: 140px;
 	height: 60px;
+	padding-top: 30px;
 	border-radius: 50%;
 	transition: scale ease $tr;
+	margin-left: -70px;
 
-	@media all and (min-width: $lg) {
+	@media all and (min-width: 393px) {
+		width: 150px;
+		margin-left: -20px;
+	}
+
+	@media all and (min-width: 410px) {
+		margin-left: 0;
+	}
+
+	@media all and (min-width: $xl) {
+		position: absolute;
 		flex-direction: column;
 		width: 290px;
 		height: 130px;
@@ -142,7 +150,6 @@
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: $lh-h1;
-		margin-left: 12px;
 		background-color: rgba(17, 17, 17, 0.014);
 
 		@media all and (min-width: $lg) {
