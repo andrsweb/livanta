@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     'use strict'
 
     openDropdowns()
-});
+})
 
 const setupHoverDropdowns = (hoverLinks, dropdownItems, hash) => {
     for (let i = 0; i < hoverLinks.length; i++) {

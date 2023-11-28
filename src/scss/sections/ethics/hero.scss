@@ -120,4 +120,23 @@
 	.footer {
 		padding-top: 0;
 	}
+
+	.privacy__title {
+		font-size: 30px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 40px;
+		}
+	}
+
+	.privacy__subtitle {
+		font-size: 25px;
+		font-style: italic;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
+	}
 }
