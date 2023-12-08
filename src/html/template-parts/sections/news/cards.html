@@ -6,45 +6,89 @@
 				<img class="select-arr" src="img/news/arr.svg" width="20" height="20" loading="lazy" alt="select arrow">
 			</div>
 			<div class="select-links">
-				<a href="#" class="select-link selected" tabindex="0"> 
+				<button href="#" class="select-link select-button active" tabindex="0" data-id="1"> 
 					All
-				</a>
-				<a href="#" class="select-link" tabindex="0">
+				</button>
+				<button href="#" class="select-link select-button" tabindex="0" data-id="2">
 					Press Release
-				</a>
-				<a href="#" class="select-link" tabindex="0">
+				</button>
+				<button href="#" class="select-link select-button" tabindex="0" data-id="3">
 					Articles
-				</a>
-				<a href="#" class="select-link" tabindex="0">
+				</button>
+				<button href="#" class="select-link select-button" tabindex="0" data-id="4">
 					Innovation Stories
-				</a>
-				<a href="#" class="select-link" tabindex="0">
+				</button>
+				<button href="#" class="select-link select-button" tabindex="0" data-id="5">
 					Company News
-				</a>
+				</button>
 			</div>
 		</div>
-		<div class="filters">
-			<button class="filter active" tabindex="0">
+		<div class="filters tabs-buttons">
+			<button class="filter news-button active" tabindex="0" data-id="1">
 				All
 			</button>
 			<span>|</span>
-			<button class="filter" tabindex="0">
+			<button class="filter news-button" tabindex="0" data-id="2">
 				Press Release
 			</button>
 			<span>|</span>
-			<button class="filter" tabindex="0">
+			<button class="filter news-button" tabindex="0" data-id="3">
 				Articles
 			</button>
 			<span>|</span>
-			<button class="filter" tabindex="0">
+			<button class="filter news-button" tabindex="0" data-id="4">
 				Innovation Stories
 			</button>
 			<span>|</span>
-			<button class="filter" tabindex="0">
+			<button class="filter news-button" tabindex="0" data-id="5">
 				Company News
 			</button>
 		</div>
-		<div class="news-cards">
+		<div class="news-cards active" data-id="1">
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link1.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/home/news/latest-3.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link2.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card4.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link3.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card5.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link4.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card6.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link5.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card7.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link6.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card8.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link7.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card9.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link8.html'})
+		</div>
+		<div class="news-cards" data-id="2">
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link1.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/home/news/latest-3.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link2.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card4.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link3.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card5.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link4.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card6.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link5.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card7.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link6.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card8.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link7.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card9.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link8.html'})
+		</div>
+		<div class="news-cards" data-id="3">
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link1.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/home/news/latest-3.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link2.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card4.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link3.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card5.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link4.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card6.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link5.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card7.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link6.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card8.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link7.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card9.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link8.html'})
+		</div>
+		<div class="news-cards" data-id="4">
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link1.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/home/news/latest-3.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link2.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card4.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link3.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card5.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link4.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card6.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link5.html'})
+			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/news/cards/card7.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link6.html'})
+			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/news/cards/card8.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link7.html'})
+			@@include('../../components/card.html',{'alt':'news background business','src': 'img/news/cards/card9.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link8.html'})
+		</div>
+		<div class="news-cards" data-id="5">
 			@@include('../../components/card.html',{'alt':'news background with people','src': 'img/home/news/latest-1.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
 			@@include('../../components/card.html',{'alt':'news background with medic','src': 'img/home/news/latest-2.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link1.html'})
 			@@include('../../components/card.html',{'alt':'news background business','src': 'img/home/news/latest-3.png', 'type': 'Articles', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link2.html'})
@@ -57,27 +101,27 @@
 		</div>
 		<div class="pagination__wrapper">
 			<div class="news-pagination">
-				<a href="#" class="news-pagination__arrow prev-arrow">
+				<button href="#" class="news-pagination__arrow prev-arrow news-button-prev" data-id="prev">
 					<img src="img/news/prev.svg" width="30" height="30" alt="arrow prev">
-				</a>
-				<a href="#" class="news-pagination-item active" tabindex="0">
+				</button>
+				<button class="news-pagination-item news-button active" tabindex="0" data-id="1">
 					1
-				</a>
-				<a href="#" class="news-pagination-item" tabindex="0">
+				</button>
+				<button class="news-pagination-item news-button" tabindex="0" data-id="2">
 					2
-				</a>
-				<a href="#" class="news-pagination-item" tabindex="0">
+				</button>
+				<button href="#" class="news-pagination-item news-button" tabindex="0" data-id="3">
 					3
-				</a>
-				<a href="#" class="news-pagination-item" tabindex="0">
+				</button>
+				<button href="#" class="news-pagination-item news-button" tabindex="0" data-id="4">
 					4
-				</a>
-				<a href="#" class="news-pagination-item" tabindex="0">
+				</button>
+				<button href="#" class="news-pagination-item news-button" tabindex="0" data-id="5">
 					5
-				</a>
-				<a href="#" class="news-pagination__arrow next-arrow">
+				</button>
+				<button href="#" class="news-pagination__arrow news-button-next next-arrow" data-id="next">
 					<img src="img/news/next.svg" width="30" height="30" alt="next arrow">
-				</a>
+				</button>
 			</div>
 		</div>
 	</div>
