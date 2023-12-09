@@ -217,13 +217,33 @@
 .filter {
 	color: $grey;
 	font-family: $ff;
-	font-size: 18px;
 	font-style: normal;
-	font-weight: $fw-semibold;
 	line-height: $lh;
 	padding: 0;
+	text-align: left;
+	margin-bottom: 12px;
+
+	color: $gentle-black;
+	text-align: left;
+	font-family: $ff;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: $fw-regular;
+	line-height: 160%;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	&.active {
 		color: $red;
+		font-weight: $fw-semibold;
+	}
+
+	@media all and (min-width: $md) {
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: $fw-semibold;
+		color: $grey;
 	}
 }

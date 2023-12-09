@@ -1,36 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
     'use strict'
 
-    changeNewsTab('.news-button', '.news-cards', '.news-pagination-item', '.news-button-prev', '.news-button-next')
-    changeNewsTab('.select-button', '.news-cards', '.news-pagination-item', '.news-button-prev', '.news-button-next')
+    synchronizeTabs()
+    changeSelectTextOnNewsClick()
 })
 
-const changeNewsTab = (button, contents, paginationItems, prevButton, nextButton) => {
-    const tabsHeaders = document.querySelectorAll(button),
-        tabsContents = document.querySelectorAll(contents),
-        paginationButtons = document.querySelectorAll(paginationItems),
-        prevBtn = document.querySelector(prevButton),
-        nextBtn = document.querySelector(nextButton)
+function synchronizeTabs() {
+    const tabsHeaders = document.querySelectorAll('.news-button, .filter.news-button'),
+        tabsContents = document.querySelectorAll('.news-cards'),
+        paginationButtons = document.querySelectorAll('.news-pagination-item'),
+        prevBtn = document.querySelector('.news-button-prev'),
+        nextBtn = document.querySelector('.news-button-next'),
+        select = document.querySelector('.select')
 
-    if (!tabsHeaders.length || !tabsContents.length || !paginationButtons.length || !prevBtn || !nextBtn) return
+    if (!tabsHeaders.length || !tabsContents.length || !paginationButtons.length || !prevBtn || !nextBtn || !select) return
 
     const activateTab = (id) => {
         tabsHeaders.forEach(tabsItem => tabsItem.classList.remove('active'))
         paginationButtons.forEach(paginationButton => paginationButton.classList.remove('active'))
 
-        const selectedTab = document.querySelector(`${button}[data-id="${id}"]`)
-        const selectedPaginationButton = document.querySelector(`${paginationItems}[data-id="${id}"]`)
+        const selectedTab = document.querySelector(`[data-id="${id}"].news-button, .filter[data-id="${id}"].news-button`)
+        const selectedPaginationButton = document.querySelector(`.news-pagination-item[data-id="${id}"]`)
 
         if (selectedTab && selectedPaginationButton) {
             selectedTab.classList.add('active')
             selectedPaginationButton.classList.add('active')
 
-            tabsContents.forEach(content => content.classList.remove('active'));
-            document.querySelector(`${contents}[data-id="${id}"]`).classList.add('active')
+            tabsContents.forEach(content => content.classList.remove('active'))
+            document.querySelector(`.news-cards[data-id="${id}"]`).classList.add('active')
         }
+
+        const newText = selectedTab.textContent
+        const selectArrHTML = select.querySelector('.select-arr').outerHTML
+        select.innerHTML = newText + selectArrHTML
+        select.parentElement.classList.remove('opened')
     }
 
-    tabsHeaders.forEach((tab, i, tabs) => {
+    tabsHeaders.forEach((tab) => {
         tab.addEventListener('click', () => {
             const id = tab.dataset.id
             if (!id || tab.classList.contains('active')) return
@@ -48,25 +54,39 @@ const changeNewsTab = (button, contents, paginationItems, prevButton, nextButton
         })
     })
 
-	prevBtn.addEventListener('click', () => {
-		const currentlyActiveTab = document.querySelector(`${button}.active`)
-		const currentActiveIndex = Array.from(tabsHeaders).indexOf(currentlyActiveTab)
-		const prevIndex = Math.max(currentActiveIndex - 1, 0)
-	
-		const prevId = tabsHeaders[prevIndex].dataset.id
-		activateTab(prevId)
-	});
-	
-	nextBtn.addEventListener('click', () => {
-		const currentlyActiveTab = document.querySelector(`${button}.active`)
-		const currentActiveIndex = Array.from(tabsHeaders).indexOf(currentlyActiveTab)
-		const nextIndex = Math.min(currentActiveIndex + 1, tabsHeaders.length - 1)
-	
-		const nextId = tabsHeaders[nextIndex].dataset.id
-		activateTab(nextId)
-	})
+    prevBtn.addEventListener('click', () => {
+        const currentActiveIndex = Array.from(tabsHeaders).findIndex(tab => tab.classList.contains('active'))
+        const prevIndex = Math.max(currentActiveIndex - 1, 0)
+        const prevId = tabsHeaders[prevIndex].dataset.id
 
-	window.addEventListener('resize', () => {
-		activateTab('1')
-	})
+        activateTab(prevId)
+    })
+
+    nextBtn.addEventListener('click', () => {
+        const currentActiveIndex = Array.from(tabsHeaders).findIndex(tab => tab.classList.contains('active'))
+        const nextIndex = Math.min(currentActiveIndex + 1, tabsHeaders.length - 1)
+        const nextId = tabsHeaders[nextIndex].dataset.id
+
+        activateTab(nextId)
+    })
+
+    window.addEventListener('resize', () => {
+        activateTab('1')
+    })
+}
+
+function changeSelectTextOnNewsClick() {
+    const newsButtons = document.querySelectorAll('.news-button')
+    const select = document.querySelector('.select')
+
+    if (!newsButtons || !select) return
+
+    newsButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const newText = button.textContent
+            const selectArrHTML = select.querySelector('.select-arr').outerHTML
+            select.innerHTML = newText + selectArrHTML
+            select.parentElement.classList.remove('opened')
+        })
+    })
 }

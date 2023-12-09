@@ -5,44 +5,27 @@
 				All
 				<img class="select-arr" src="img/news/arr.svg" width="20" height="20" loading="lazy" alt="select arrow">
 			</div>
-			<div class="select-links">
-				<button href="#" class="select-link select-button active" tabindex="0" data-id="1"> 
+			<div class="filters tabs-buttons">
+				<button class="filter news-button active" tabindex="0" data-id="1">
 					All
 				</button>
-				<button href="#" class="select-link select-button" tabindex="0" data-id="2">
+				<span>|</span>
+				<button class="filter news-button" tabindex="0" data-id="2">
 					Press Release
 				</button>
-				<button href="#" class="select-link select-button" tabindex="0" data-id="3">
+				<span>|</span>
+				<button class="filter news-button" tabindex="0" data-id="3">
 					Articles
 				</button>
-				<button href="#" class="select-link select-button" tabindex="0" data-id="4">
+				<span>|</span>
+				<button class="filter news-button" tabindex="0" data-id="4">
 					Innovation Stories
 				</button>
-				<button href="#" class="select-link select-button" tabindex="0" data-id="5">
+				<span>|</span>
+				<button class="filter news-button" tabindex="0" data-id="5">
 					Company News
 				</button>
 			</div>
-		</div>
-		<div class="filters tabs-buttons">
-			<button class="filter news-button active" tabindex="0" data-id="1">
-				All
-			</button>
-			<span>|</span>
-			<button class="filter news-button" tabindex="0" data-id="2">
-				Press Release
-			</button>
-			<span>|</span>
-			<button class="filter news-button" tabindex="0" data-id="3">
-				Articles
-			</button>
-			<span>|</span>
-			<button class="filter news-button" tabindex="0" data-id="4">
-				Innovation Stories
-			</button>
-			<span>|</span>
-			<button class="filter news-button" tabindex="0" data-id="5">
-				Company News
-			</button>
 		</div>
 		<div class="news-cards active" data-id="1">
 			@@include('../../components/card.html',{'alt':'Colorful graphs','src': 'img/news/news-cards/news1.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
@@ -133,25 +116,25 @@
 		</div>
 		<div class="pagination__wrapper">
 			<div class="news-pagination">
-				<button href="#" class="news-pagination__arrow prev-arrow news-button-prev" data-id="prev">
+				<button class="news-pagination__arrow prev-arrow news-button-prev" data-id="prev">
 					<img src="img/news/prev.svg" width="30" height="30" alt="arrow prev">
 				</button>
-				<button class="news-pagination-item news-button active" tabindex="0" data-id="1">
+				<button class="news-pagination-item pag-button active" tabindex="0" data-id="1">
 					1
 				</button>
-				<button class="news-pagination-item news-button" tabindex="0" data-id="2">
+				<button class="news-pagination-item pag-button" tabindex="0" data-id="2">
 					2
 				</button>
-				<button href="#" class="news-pagination-item news-button" tabindex="0" data-id="3">
+				<button class="news-pagination-item pag-button" tabindex="0" data-id="3">
 					3
 				</button>
-				<button href="#" class="news-pagination-item news-button" tabindex="0" data-id="4">
+				<button class="news-pagination-item pag-button" tabindex="0" data-id="4">
 					4
 				</button>
-				<button href="#" class="news-pagination-item news-button" tabindex="0" data-id="5">
+				<button class="news-pagination-item pag-button" tabindex="0" data-id="5">
 					5
 				</button>
-				<button href="#" class="news-pagination__arrow news-button-next next-arrow" data-id="next">
+				<button class="news-pagination__arrow news-button-next next-arrow" data-id="next">
 					<img src="img/news/next.svg" width="30" height="30" alt="next arrow">
 				</button>
 			</div>

@@ -9,11 +9,13 @@
 		max-width: $xl;
 	}
 
+
 	.select {
 		cursor: pointer;
 		width: 100%;
 		padding: 4px 12px;
-		display: inline;
+		display: inline-flex;
+		align-items: center;
 		position: relative;
 		color: $gentle-black;
 		text-align: center;
@@ -25,69 +27,47 @@
 		text-align: left;
 		border: 2px solid $gentle-black;
 		position: relative;
-		padding-right: 32px;
+		width: auto;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+
+		&-arr {
+			transition: transform ease $tr;
+		}
 		
 		&-wrapper {
 			margin-bottom: 16px;
 			position: relative;
 
 			@media all and (min-width: $md) {
-				display: none;
+				display: flex;
 			}
 
 			&.opened {
-				.select-links {
-					display: flex;
+				.filters {
+					opacity: 1;
+					visibility: visible;
 				}
 
 				.select-arr {
-					transform: translateY(-50%) rotate(180deg);
+					transform: rotate(180deg);
 				}
-			}
-		}
-
-		&-arr {
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			transform: translateY(-50%) rotate(0);
-		}
-
-		&-links {
-			position: absolute;
-			top: 28px;
-			display: none;
-			width: 100%;
-			max-width: 170px;
-			padding: 16px;
-			background-color: $white;
-			flex-direction: column;
-			z-index: 1;
-		}
-
-		&-link {
-			color: $gentle-black;
-			text-align: center;
-			font-family: $ff;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: $fw-semibold;
-			line-height: $lh;
-			text-align: left;
-			margin-bottom: 12px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-			&.active {
-				color: $red;
 			}
 		}
 	}
 
 	.filters {
-		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		display: flex;
+		opacity: 0;
+		visibility: hidden;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 159px;
 		color: $grey;
 		font-family: $ff;
 		font-size: 18px;
@@ -95,13 +75,34 @@
 		font-weight: $fw-semibold;
 		line-height: $lh;
 		margin-bottom: 32px;
+		padding: 16px 14px;
+		z-index: 1;
+		background-color: $white;
+		box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.04);
+		transition: opacity ease $tr,
+					visibility ease $tr;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			align-items: center;
+			position: static;
+			left: auto;
+			top: auto;
+			background-color: transparent;
+			box-shadow: none;
+			opacity: 1;
+			visibility: visible;
+			width: 100%;
+			padding: 0;
+		}
 
 		span {
 			margin: 0 15px;
-		}
+			display: none;
 
-		@media all and (min-width: $md) {
-			display: block;
+			@media all and (min-width: $md) {
+				display: inline-block;
+			}
 		}
 	}
 
