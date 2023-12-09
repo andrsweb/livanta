@@ -27,7 +27,7 @@
 		<div class="container">
 			@@include('template-parts/components/breadcrumbs.html', {'text': 'BACK TO NEWS', 'href':'news.html'})
 			<h1 class="h1">
-				Mend the Gap! A New Perspective to Address Quality Concerns 
+				Livanta Advances Interoperability Through Implementation of Secure File Transfer Protocol 
 			</h1>
 			<div class="news-link-hero__wrapper">
 				<img class="news-link-hero__img" src="img/news/news-link/news-img.png" width="500" height="500" alt="">
@@ -37,7 +37,7 @@
 							Category
 						</div>
 						<div class="category__item">
-							Featured Article
+							Innovation Story
 						</div>
 					</div>
 					<div class="publish">
@@ -45,7 +45,7 @@
 							Published on
 						</div>
 						<div class="publish__date">
-							May 01, 2023
+							July 27, 2022
 						</div>
 					</div>
 					<div class="share">
@@ -72,15 +72,13 @@
 		<div class="container">
 			<div class="news-info__wrapper">
 				<p class="section__text">
-					Although patients' rights to receive high-quality health care have been codified in many laws, rules, and other regulations, no collection of policy statements or regulatory requirements ensures that the right care is always delivered the right way and at the right time. Considering the subjective and varied manners in which patients experience their health and their care, even articulating what constitutes quality health care can be challenging. <br><br>
+					In response to the need for large medical record files to be transmitted quickly and securely from healthcare providers to Livanta for medical record reviews, Livanta has implemented a solution using the Secure File Transfer Protocol (SFTP). As a Beneficiary and Family Centered Care - Quality Improvement Organization (BFCC-QIO), Livanta is required to accept electronic medical records (EMRs) from providers in a timely manner in accordance with the Medicare requirements for appeals. In addition to enabling providers to respond quickly to medical record requests from Livanta using SFTP, this protocol will significantly increase the number of healthcare provider organizations that are sending files electronically—which will reduce the need for manual processing of faxed and mailed records and lower overall costs to Medicare. Using Amazon Web Services' (AWS) Transfer Family, which provides industry standard SFTP service, Livanta's SFTP solution transfers large numbers and sizes of files quickly and easily in a safe and secure manner. AWS Transfer Family is FedRAMP authorized and available in AWS GovCloud. <br><br>
 
-					<img class="news-link__img" src="img/news/news-cards/news1.jpg" width="400" height="400" alt="">
+					Livanta currently receives medical records through postal mail, fax, Medicare's Electronic Submission of Medical Documentation (esMD) system, Direct Secure Messaging (DSM), and the electronic Livanta File Transfer (e-LiFT) portal. The addition of SFTP to Livanta's current EMR transfer options will allow for a fast yet secure file transfer process for larger file sizes.
+					<img class="news-link__img" src="img/news/news-inner/inner5.jpg" width="400" height="400" alt="">
+					To pilot the solution, Livanta will engage several healthcare provider organizations over a six-month testing phase. Each provider organization will set up its own public and private Secure Shell (SSH) key pair with its own home directory that only its authorized personnel will be able to access. To ensure an additional level of security, each provider will share its public key with Livanta. Uploaded EMR files will be added to an Amazon Simple Storage Service (S3) bucket, where they will be scanned for viruses, then moved to a second S3 storage bucket for processing. SFTP will read the barcode from the EMR and upload the file to Livanta's systems or other systems using an Application Programming Interface (API). <br><br>
 
-					Over the last several decades, many authors, researchers, policymakers, and other stakeholders have endeavored to define quality. The National Academy of Medicine defines quality as “the degree to which health services for individuals and populations increase the likelihood of desired health outcomes and are consistent with current professional knowledge.”1 However, the subjectivity and disparate perspectives of providers and patients—which are sometimes at odds with one another—serve as a useful lens for understanding the factors that impair quality. <br><br>
-
-					Article authors include Leasa Novak, MS, LNHA, LPN, BCC, BCPA, Livanta's Communications Director; Dr. Ellen Evans, Livanta Chief Medical Officer; and Carmen Villegas, Livanta's Immediate Advocacy Manager. <br><br>
-
-					The full-text article is available in the May/June 2022 issue of <a href="https://law-store.wolterskluwer.com/s/product/journal-of-health-care-compliance-vitallaw-3r/01tG000000LtyotIAB">Journal of Health Care Compliance.</a> 
+					Livanta implemented other methods of electronic medical record transmission, such as DSM and e-LiFT in October 2020, in response to the Centers for Medicare & Medicaid (CMS) Interoperability and Patient Access final rule (CMS-1735-F). Meanwhile, Livanta continued planning and developing further innovative methods for EMR transmission. The rollout of SFTP could not have been possible without the support of CMS and collaboration with the CMS Information Systems Group (ISG). With its innovative SFTP process, Livanta continues advancing CMS's goal of interoperability and embracing the digital age with timely, secure, and seamless data transfer across the care continuum. Livanta remains committed to customer service excellence and technical innovations that will improve processes that ultimately improve the lives of Medicare beneficiaries and protect the Medicare Trust Fund. 
 				</p>
 				<div class="news-info__highlight">
 					<h2 class="news-info__highlight_title">
