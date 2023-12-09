@@ -192,6 +192,16 @@
 		@media all and (min-width: $lg) {
 			display: none;
 		}
+
+		.swiper-button {
+			&:hover {
+				background-color: $gentle-black;
+
+				img {
+					filter: brightness(100%) invert(1);
+				}
+			}
+		}
 	}
 
 	.h3 {
