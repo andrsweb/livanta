@@ -287,11 +287,11 @@
 		<div class="container">
 			<div class="select-wrapper">
 				<div class="select">
-					All
+					Company News
 					<img class="select-arr" src="img/news/arr.svg" width="20" height="20" loading="lazy" alt="select arrow">
 				</div>
 				<div class="filters tabs-buttons">
-					<button class="filter news-button active" tabindex="0">
+					<button class="filter news-button" tabindex="0" onclick="window.location.href='news.html'">
 						All
 					</button>
 					<span>|</span>
@@ -303,53 +303,18 @@
 						Articles
 					</button>
 					<span>|</span>
-					<button class="filter news-button" tabindex="0" onclick="window.location.href='news-articles.html'">
+					<button class="filter news-button" tabindex="0" onclick="window.location.href='news-stories.html'">
 						Innovation Stories
 					</button>
 					<span>|</span>
-					<button class="filter news-button" tabindex="0" onclick="window.location.href='news-company.html'">
+					<button class="filter news-button active" tabindex="0">
 						Company News
 					</button>
 				</div>
 			</div>
 			<div class="news-cards active" data-current-page="1">
-				@@include('template-parts/components/card.html',{'alt':'Colorful graphs','src': 'img/news/news-cards/news1.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
-				@@include('template-parts/components/card.html',{'alt':'Journal cover with the director','src': 'img/news/news-cards/news2.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'PERM Pearls: What CMS\' Payment Error Rate Measurement Data Offers', 'href': 'news-link1.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '11 April, 2023', 'text': 'Livanta Integrates with Medicare\'s Beneficiary Information on the Cloud (BIC) Database', 'href': 'news-link2.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '02 March, 2023', 'text': 'Livanta Wins Platinum MarCom Award Third Year in a Row', 'href': 'news-link3.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '26 January, 2023', 'text': 'Livanta Earns Capability Maturity Model Integration Development Version 2.0 (CMMI-DEV V2.0) Certification', 'href': 'news-link4.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '08 August, 2022', 'text': 'Livanta Joins AWS Partner Network and AWS Public Sector Program', 'href': 'news-link5.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '27 July, 2022', 'text': 'Livanta Advances Interoperability Through Implementation of Secure File Transfer Protocol', 'href': 'news-link6.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '28 April, 2022', 'text': 'Livanta Wins Award for Caregiver Social Media Toolkit #MyRoleCounts', 'href': 'news-link7.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '14 April, 2022', 'text': 'Livanta Launches New Publication, The Livanta Claims Review Advisor, for Healthcare Providers', 'href': 'news-link8.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '31 March, 2022', 'text': 'Livanta Hits Milestone of One-Millionth Medicare Appeal', 'href': 'news-link9.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '14 February, 2022', 'text': 'Advancing Health Equity in Rural Communities through Targeted Outreach', 'href': 'news-link10.html'})
-				@@include('template-parts/components/card.html',{'alt':'A community of people','src': 'img/news/news-cards/news5.jpg', 'type': 'Press Release', 'date': ' 17 December, 2021', 'text': 'Livanta Launches #MyRoleCounts Social Media Toolkit', 'href': 'news-link11.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '29 November, 2021', 'text': 'Leveraging Social Media to Raise Awareness for Family Caregivers', 'href': 'news-link12.html'})
-				@@include('template-parts/components/card.html',{'alt':'Marcom awards and the statue of liberty','src': 'img/news/news-cards/news6.jpg', 'type': 'Press Release', 'date': '15 November, 2021', 'text': 'Livanta Wins Platinum MarCom Awards Second Year in a Row', 'href': 'news-link13.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '16 August, 2021', 'text': 'Livanta Launches New Publication for Beneficiaries, Families, Caregivers, and Advocates', 'href': 'news-link14.html'})
 				@@include('template-parts/components/card.html',{'alt':'Marcom awards and the statue of liberty','src': 'img/news/news-cards/news7.jpg', 'type': 'Company News', 'date': '03 June, 2021', 'text': 'Livanta Earns AVA Gold Award for COVID-19 Campaign', 'href': 'news-link15.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '08 March, 2021', 'text': 'Livanta Awarded CMS Claim Review Services Contract', 'href': 'news-link16.html'})
 				@@include('template-parts/components/card.html',{'alt':'Star image with rockstar text','src': 'img/news/news-cards/news8.jpg', 'type': 'Company News', 'date': '09 March, 2021', 'text': 'Livanta\'s \'Rock Star\' Status', 'href': 'news-link17.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '01 March, 2021', 'text': 'Expediting BCMP Enrollment through Collaboration, Technology, and Engagement', 'href': 'news-link18.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '19 February, 2021', 'text': 'Livanta Launches Redesigned Website', 'href': 'news-link19.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '02 February, 2021', 'text': 'Using Real-Time Customer Feedback from Medicare Beneficiaries and their Families', 'href': 'news-link20.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '01 February, 2021', 'text': 'Livanta Earns ISO Re-Certification', 'href': 'news-link21.html'})
-				@@include('template-parts/components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '06 January, 2021', 'text': 'CMS\' Call for Interoperability: Livanta Innovates Solutions with Bellese Technologies', 'href': 'news-link22.html'})
-				@@include('template-parts/components/card.html',{'alt':'Marcom awards and the statue of liberty','src': 'img/news/news-cards/news6.jpg', 'type': 'Press Release', 'date': '28 October, 2020', 'text': 'Livanta Wins Highest Honor in 2020 MarCom Awards', 'href': 'news-link23.html'})
-				@@include('template-parts/components/card.html',{'alt':'Mobile gadget with opened Livanta website','src': 'img/news/news-cards/news9.jpg', 'type': 'Press Release', 'date': '05 June, 2020', 'text': 'Livanta LLC Resources Help Medicare Beneficiaries and Caregivers Address Healthcare Quality Concerns', 'href': 'news-link24.html'})
-				@@include('template-parts/components/card.html',{'alt':'Livanta Receives Spotlight Award','src': 'img/news/news-cards/news9a.png', 'type': 'Press Release', 'date': '22 May, 2020', 'text': 'Livanta Receives Spotlight Award For New Publication', 'href': 'news-link25.html'})
-				@@include('template-parts/components/card.html',{'alt':'Girl with old woman','src': 'img/news/news-cards/news10.jpg', 'type': 'Featured Article', 'date': '18 May, 2020', 'text': 'Caregivers Reduce Readmissions When Patients Fear Hospital Discharge', 'href': 'news-link26.html'})
-				@@include('template-parts/components/card.html',{'alt':'Modern building','src': 'img/news/news-cards/news11.jpg', 'type': 'Featured Article', 'date': '01 May, 2020', 'text': 'Appropriate Coding Queries in Higher-Weighted DRG Cases', 'href': 'news-link27.html'})
-				@@include('template-parts/components/card.html',{'alt':'2 gears labeled customer, experience','src': 'img/news/news-cards/news12.jpg', 'type': 'Featured Article', 'date': '16 April, 2020', 'text': 'An Approach to Using Customer Experience Data in the Delivery of Regulation-Driven Services', 'href': 'news-link28.html'})
-				@@include('template-parts/components/card.html',{'alt':'COVID-19 image','src': 'img/news/news-cards/news13.jpg', 'type': 'Press Release', 'date': '16 Apr, 2020', 'text': 'Livanta Partners With 2-1-1 Agencies to Support COVID-19 Response', 'href': 'news-link29.html'})
-				@@include('template-parts/components/card.html',{'alt':'Wheelchair','src': 'img/news/news-cards/news14.jpg', 'type': 'Featured Article', 'date': '20 March, 2020', 'text': 'Ensuring Proper Payment of Equipment Delivered in Association with Hospital Stays: When A Is Not B, Or Is It?', 'href': 'news-link30.html'})
-				@@include('template-parts/components/card.html',{'alt':'Director\'s photo','src': 'img/news/news-cards/news15.jpg', 'type': 'Press Release', 'date': '05 Mar, 2020', 'text': 'Livanta Board Chairman Anthony C. Wisniewski Appointed By The President Of The United State To Prestigious Federal Committee', 'href': 'news-link31.html'})
-				@@include('template-parts/components/card.html',{'alt':'Call center operator girl','src': 'img/news/news-cards/news16.jpg', 'type': 'Featured Article', 'date': '15 February, 2020', 'text': 'Closing the Circle: Knowing What\'s Possible Promotes Beneficiary Compliance', 'href': 'news-link32.html'})
-				@@include('template-parts/components/card.html',{'alt':'Stethoscope image','src': 'img/news/news-cards/news17.jpg', 'type': 'Featured Article', 'date': '08 January, 2020', 'text': 'The Right to Appeal Discharge Decisions and to Receive Important Message from Medicare: Hospitals Should Ensure Compliance', 'href': 'news-link33.html'})
-				@@include('template-parts/components/card.html',{'alt':'Medical clinic corridor','src': 'img/news/news-cards/news18.jpg', 'type': 'Featured Article', 'date': '15 December, 2019', 'text': '2018 Provider Update: Short Stay Reviews', 'href': 'news-link34.html'})
-				@@include('template-parts/components/card.html',{'alt':'Happy family','src': 'img/news/news-cards/news19.jpg', 'type': 'Press Release', 'date': '04 Dec, 2019', 'text': 'Livanta Awarded CMS Beneficiary and Family Centered Care (BFCC) Quality Improvement Organization (QIO) Contract', 'href': 'news-link35.html'})
-				@@include('template-parts/components/card.html',{'alt':'Photo of Chief Executive Officer of Livanta LLC','src': 'img/news/news-cards/news20.jpg', 'type': 'Press Release', 'date': '10 Oct, 2019', 'text': 'Roger Hebden Named Chief Executive Officer of Livanta LLC', 'href': 'news-link36.html'})
 			</div>
 			<div class="pagination__wrapper">
 				<div class="news-pagination">

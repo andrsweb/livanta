@@ -206,6 +206,14 @@
 			}
 		}
 
+		.prev-arrow, .next-arrow {
+			transition: opacity ease $tr;
+
+			&.disabled {
+				opacity: 0.3;
+			}
+		}
+
 		.prev-arrow {
 			margin-right: 16px;
 		}

@@ -6,28 +6,28 @@
 				<img class="select-arr" src="img/news/arr.svg" width="20" height="20" loading="lazy" alt="select arrow">
 			</div>
 			<div class="filters tabs-buttons">
-				<button class="filter news-button active" tabindex="0" data-id="1">
+				<button class="filter news-button active" tabindex="0">
 					All
 				</button>
 				<span>|</span>
-				<button class="filter news-button" tabindex="0" data-id="2">
+				<button class="filter news-button" tabindex="0">
 					Press Release
 				</button>
 				<span>|</span>
-				<button class="filter news-button" tabindex="0" data-id="3">
+				<button class="filter news-button" tabindex="0">
 					Articles
 				</button>
 				<span>|</span>
-				<button class="filter news-button" tabindex="0" data-id="4">
+				<button class="filter news-button" tabindex="0">
 					Innovation Stories
 				</button>
 				<span>|</span>
-				<button class="filter news-button" tabindex="0" data-id="5">
+				<button class="filter news-button" tabindex="0">
 					Company News
 				</button>
 			</div>
 		</div>
-		<div class="news-cards active" data-id="1">
+		<div class="news-cards active" data-current-page="1">
 			@@include('../../components/card.html',{'alt':'Colorful graphs','src': 'img/news/news-cards/news1.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
 			@@include('../../components/card.html',{'alt':'Journal cover with the director','src': 'img/news/news-cards/news2.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'PERM Pearls: What CMS\' Payment Error Rate Measurement Data Offers', 'href': 'news-link1.html'})
 			@@include('../../components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '11 April, 2023', 'text': 'Livanta Integrates with Medicare\'s Beneficiary Information on the Cloud (BIC) Database', 'href': 'news-link2.html'})
@@ -67,7 +67,7 @@
 			@@include('../../components/card.html',{'alt':'Photo of Chief Executive Officer of Livanta LLC','src': 'img/news/news-cards/news20.jpg', 'type': 'Press Release', 'date': '10 Oct, 2019', 'text': 'Roger Hebden Named Chief Executive Officer of Livanta LLC', 'href': 'news-link36.html'})
 
 		</div>
-		<div class="news-cards" data-id="2">
+		<div class="news-cards">
 			@@include('../../components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '02 March, 2023', 'text': 'Livanta Wins Platinum MarCom Award Third Year in a Row', 'href': 'news-link3.html'})
 			@@include('../../components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '26 January, 2023', 'text': 'Livanta Earns Capability Maturity Model Integration Development Version 2.0 (CMMI-DEV V2.0) Certification', 'href': 'news-link4.html'})
 			@@include('../../components/card.html',{'alt':'Livanta logotype','src': 'img/header/logo-color.svg', 'type': 'Press Release', 'date': '08 August, 2022', 'text': 'Livanta Joins AWS Partner Network and AWS Public Sector Program', 'href': 'news-link5.html'})
@@ -87,7 +87,7 @@
 			@@include('../../components/card.html',{'alt':'Happy family','src': 'img/news/news-cards/news19.jpg', 'type': 'Press Release', 'date': '04 Dec, 2019', 'text': 'Livanta Awarded CMS Beneficiary and Family Centered Care (BFCC) Quality Improvement Organization (QIO) Contract', 'href': 'news-link35.html'})
 			@@include('../../components/card.html',{'alt':'Photo of Chief Executive Officer of Livanta LLC','src': 'img/news/news-cards/news20.jpg', 'type': 'Press Release', 'date': '10 Oct, 2019', 'text': 'Roger Hebden Named Chief Executive Officer of Livanta LLC', 'href': 'news-link36.html'})
 		</div>
-		<div class="news-cards" data-id="3">
+		<div class="news-cards">
 			@@include('../../components/card.html',{'alt':'Colorful graphs','src': 'img/news/news-cards/news1.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'Mend the Gap! A New Perspective to Address Quality Concerns', 'href': 'news-link.html'})
 			@@include('../../components/card.html',{'alt':'Journal cover with the director','src': 'img/news/news-cards/news2.jpg', 'type': 'Featured Article', 'date': '01 May, 2023', 'text': 'PERM Pearls: What CMS\' Payment Error Rate Measurement Data Offers', 'href': 'news-link1.html'})
 			@@include('../../components/card.html',{'alt':'Girl with old woman','src': 'img/news/news-cards/news10.jpg', 'type': 'Featured Article', 'date': '18 May, 2020', 'text': 'Caregivers Reduce Readmissions When Patients Fear Hospital Discharge', 'href': 'news-link26.html'})
@@ -99,7 +99,7 @@
 			@@include('../../components/card.html',{'alt':'Medical clinic corridor','src': 'img/news/news-cards/news18.jpg', 'type': 'Featured Article', 'date': '15 December, 2019', 'text': '2018 Provider Update: Short Stay Reviews', 'href': 'news-link34.html'})
 			
 		</div>
-		<div class="news-cards" data-id="4">
+		<div class="news-cards">
 			@@include('../../components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '11 April, 2023', 'text': 'Livanta Integrates with Medicare\'s Beneficiary Information on the Cloud (BIC) Database', 'href': 'news-link2.html'})
 			@@include('../../components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '27 July, 2022', 'text': 'Livanta Advances Interoperability Through Implementation of Secure File Transfer Protocol', 'href': 'news-link6.html'})
 			@@include('../../components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '14 February, 2022', 'text': 'Advancing Health Equity in Rural Communities through Targeted Outreach', 'href': 'news-link10.html'})
@@ -110,31 +110,16 @@
 			@@include('../../components/card.html',{'alt':'Newspaper headline','src': 'img/news/news-cards/news3.jpg', 'type': 'Innovation Stories', 'date': '06 January, 2021', 'text': 'CMS\' Call for Interoperability: Livanta Innovates Solutions with Bellese Technologies', 'href': 'news-link22.html'})
 			
 		</div>
-		<div class="news-cards" data-id="5">
+		<div class="news-cards">
 			@@include('../../components/card.html',{'alt':'Marcom awards and the statue of liberty','src': 'img/news/news-cards/news7.jpg', 'type': 'Company News', 'date': '03 June, 2021', 'text': 'Livanta Earns AVA Gold Award for COVID-19 Campaign', 'href': 'news-link15.html'})
 			@@include('../../components/card.html',{'alt':'Star image with rockstar text','src': 'img/news/news-cards/news8.jpg', 'type': 'Company News', 'date': '09 March, 2021', 'text': 'Livanta\'s \'Rock Star\' Status', 'href': 'news-link17.html'})
 		</div>
 		<div class="pagination__wrapper">
 			<div class="news-pagination">
-				<button class="news-pagination__arrow prev-arrow news-button-prev" data-id="prev">
+				<button class="news-pagination__arrow prev-arrow news-button-prev">
 					<img src="img/news/prev.svg" width="30" height="30" alt="arrow prev">
 				</button>
-				<button class="news-pagination-item pag-button active" tabindex="0" data-id="1">
-					1
-				</button>
-				<button class="news-pagination-item pag-button" tabindex="0" data-id="2">
-					2
-				</button>
-				<button class="news-pagination-item pag-button" tabindex="0" data-id="3">
-					3
-				</button>
-				<button class="news-pagination-item pag-button" tabindex="0" data-id="4">
-					4
-				</button>
-				<button class="news-pagination-item pag-button" tabindex="0" data-id="5">
-					5
-				</button>
-				<button class="news-pagination__arrow news-button-next next-arrow" data-id="next">
+				<button class="news-pagination__arrow news-button-next next-arrow">
 					<img src="img/news/next.svg" width="30" height="30" alt="next arrow">
 				</button>
 			</div>
