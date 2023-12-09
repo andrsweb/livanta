@@ -75,7 +75,7 @@ function synchronizeTabs() {
     })
 }
 
-function changeSelectTextOnNewsClick() {
+const changeSelectTextOnNewsClick = () => {
     const newsButtons = document.querySelectorAll('.news-button')
     const select = document.querySelector('.select')
 
