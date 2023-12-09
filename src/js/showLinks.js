@@ -20,6 +20,8 @@ const closeOnOutsideClick = () => {
     document.addEventListener('click', e => {
         const selectWrapper = document.querySelector('.select-wrapper')
 
+		if(!selectWrapper) return
+
         if (!selectWrapper.contains(e.target)) {
             selectWrapper.classList.remove('opened')
         }

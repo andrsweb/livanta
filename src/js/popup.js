@@ -58,9 +58,14 @@ const showPopup = ( selector, btn, lock) => {
 		const target = e.target
 
 		if ( target.className && target.classList.contains( 'popup-wrapper' ) ) {
+			const video = document.querySelector('.video')
+
+			if(!video) return
+
 			popupWrapper.classList.add('closed')
 				setTimeout(() => popupWrapper.classList.remove('showed'), 350);
 				setTimeout(() => popupWrapper.classList.remove('closed'), 350);
+				video.pause()
 				enableBodyScroll( getTargetElement() )
 		}
 	} )

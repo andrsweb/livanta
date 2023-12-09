@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const playVideo = () => {
-	
 	const playButton = document.querySelector('.play__button')
 	const video = document.querySelector('.video')
 	const closeBtn = document.querySelector('.video-popup__wrapper .popup-close')
