@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardsPagination = () => {
         const paginationNumbers = document.querySelector('.news-pagination')
         const paginatedList = document.querySelector('.news-cards')
+
+		if(!paginationNumbers || !paginatedList) return
+
         const listItems = paginatedList.querySelectorAll('.card')
         const nextButton = document.querySelector('.news-button-next')
         const prevButton = document.querySelector('.news-button-prev')
