@@ -57,6 +57,13 @@
 		@media all and (min-width: $lg) {
 			max-width: 560px;
 			height: 590px;
+			object-fit: cover;
+		}
+	}
+
+	&.data-img {
+		img {
+			object-position: 10% 50%;
 		}
 	}
 }
