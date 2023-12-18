@@ -20,6 +20,8 @@
 		}
 	}
 
+
+
 	&__left {
 		width: 100%;
 		max-width: 416px;
@@ -38,6 +40,20 @@
 	}
 
 	&__info {
+		&_socials {
+			display: flex;
+			align-items: center;
+			margin-top: 36px;
+		}
+
+		&_link {
+			margin-right: 12px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
 		&_item {
 			display: flex;
 			align-items: center;
@@ -84,7 +100,7 @@
 				height: 24px;
 				position: absolute;
 				left: 0;
-				top: 50%;
+				top: 66%;
 				transform: translateY(-50%);
 				background-image: url('../img/footer/call.svg');
 				background-repeat: no-repeat;
