@@ -58,13 +58,13 @@
 	.dropdown__inner_text {
 		color: $grey;
 		font-family: $ff;
-		font-size: 12px;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: $lh;
 
 		@media all and (min-width: $md) {
-			font-size: 14px;
+			font-size: 16px;
 		}
 	}
 }
