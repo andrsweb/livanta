@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	swiperInit('.latest-news-slider', '.latest__news_next', '.latest__news_prev')
 	swiperInit('.more-like-swiper', '.more-like_next', '.more-like_prev')
 	swiperInitWithBar('.leadership-swiper', '.leadership_next', '.leadership_prev')
+	customSlider()
 })
 
 const swiperInit = (selector, next, prev) => {
@@ -76,38 +77,46 @@ const swiperInitWithBar = (selector, next, prev) => {
 	if (!swiper) return
 }
 
-const sliderThumbs = new Swiper('.slider-thumbs .swiper-container', {
-	slidesPerView: 'auto',
-	spaceBetween: 20,
-	modules: [Thumbs],
-	freeMode: true,
-	
+const customSlider = () => {
+	const swiper = new Swiper('.slider-info', {
+		slidesPerView: 1,
+		spaceBetween: 32,
+		modules: [Navigation],
 
-	breakpoints: {
-		320: {
-			direction: 'horizontal',
+		navigation: {
+			nextEl: '.certifications_next',
+			prevEl: '.certifications_prev',
 		},
 
-		992: {
-			direction: 'vertical',
-			allowTouchMove: false
-		}
-	},
-});
-const sliderImages = new Swiper('.slider-info .swiper-container', {
-	slidesPerView: 1,
-	spaceBetween: 32,
-	mousewheel: true,
-	modules: [Thumbs, Navigation],
+		grabCursor: true
+	})
 
-	navigation: {
-		nextEl: '.certifications_next',
-		prevEl: '.certifications_prev',
-	},
+	if (!swiper) return
 
-	grabCursor: true,
-	thumbs: {
-		swiper: sliderThumbs
-	}
-});
+	const certificationItems = document.querySelectorAll('.certifications__col_item')
 
+	if (!certificationItems.length) return
+
+	certificationItems.forEach((item) => {
+		item.addEventListener('click', () => {
+
+			certificationItems.forEach((activeItem) => {
+				activeItem.classList.remove('active')
+			})
+
+			item.classList.add('active')
+
+			const dataIndex = item.getAttribute('data-index')
+			swiper.slideTo(dataIndex)
+		})
+	})
+
+	swiper.on('slideChange', () => {
+		const activeIndex = swiper.activeIndex
+
+		certificationItems.forEach((item, i) => {
+			if (i === activeIndex) item.classList.add('active')
+			else item.classList.remove('active')
+		})
+	})
+}
